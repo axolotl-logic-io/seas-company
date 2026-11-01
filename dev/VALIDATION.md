@@ -1,0 +1,67 @@
+# Validation results
+
+Validated on 2026-10-27 on macOS with Ren'Py 8.5.3.26051504.
+
+## Automated checks
+
+- Ren'Py lint: passes without errors or warnings (`lint.log`). The script contains 326 dialogue blocks, 6,162 words, and 11 menus.
+- Pure Python helper tests: all three tests pass (`helper-tests.log`). They cover standard, empty, and custom pronouns; signed approval updates and notification text; and trust description thresholds.
+- Route playthroughs: all three exit with status 0 (`validation-runs.log`).
+- Save/load: each route saves at the ending, deliberately changes Stan's approval to 999 and the player name to a sentinel, reloads, and verifies the original player details and trust values. Each `save_verified.json` confirms restoration. The temporary named save is removed afterward.
+
+| Route | Menu index | Ending trust: Stan / Ford | Screenshots | Evidence |
+| --- | --- | --- | --- | --- |
+| Stan after dark | 0 | 10 / 4 | 184 | `validation/route0/complete.json` |
+| A night at the museum | 1 | 2 / 6 | 177 | `validation/route1/complete.json` |
+| Film festival | 2 | 5 / 3 | 142 | `validation/route2/complete.json` |
+
+A fourth film-route run verifies the final notification fix and repeats save/load in an isolated save directory (`validation/notification-check/`, 142 screenshots). The prior version displayed literal bold tags in approval notifications because Ren'Py's notification screen escapes markup. Notifications now use plain text, and the helper test asserts those exact strings.
+
+All 645 screenshots from these four runs remain available as losslessly compressed PNGs. `events.jsonl` in each route directory records the screenshot's source statement, speaker focus, and trust values.
+
+## Visual review
+
+Reviewed representative screenshots of:
+
+- the main menu title, navigation, and cipher;
+- narration, named dialogue, long paragraphs, action bubbles, and quick navigation;
+- both twins' sprite positions and inactive-speaker dimming;
+- chapter cards, including the two-line film-festival title;
+- the dinner illustration;
+- Journal portraits, card bounds, and trust meters;
+- save slots, preference checkboxes, radio buttons, and sliders;
+- History, About, Help, and the route-specific endings.
+
+Fixed Journal content that exceeded its card width. Darkened quick-menu idle text. Hid unused audio controls because the game has no audio. The harness waits for animated screens and transitions to settle before taking their screenshots.
+
+The document's 22 comments were checked against the implementation in `COMMENT-AUDIT.md`. The initial twin appearance is instantaneous, as comment 11 specifies.
+
+## Mac package
+
+Built `../dist/SeasCompany-1.0-mac.zip` with the bundled runtime and custom application icon. Extracted it to `../dist/SeasCompany.app`.
+
+Verified that the archive excludes `dev/`, other distribution files, player saves, `HANDOFF.md`, and both source and compiled autoplay harness files. It includes the font copyright and license notices.
+
+Ran lint successfully using the packaged application's own executable and packaged game directory (`package-lint.log`). Opened the standalone application through Launch Services; its process remains running for the user. The package is unsigned and not notarized.
+
+## Web package
+
+On 2026-10-28, built `../dist/SeasCompany-1.0-web/` with Ren'Py 8.5.3 web support. The web support zip matched the official SHA-256 checksum. The game package excludes `dev/`, player saves, `HANDOFF.md`, and the autoplay harness.
+
+Served the build locally and drove it with Playwright in headless Chromium:
+
+- Desktop (1280 × 720): reached the main menu within 5 seconds and played about 130 steps with no console errors. The steps covered dialogue, three choice menus, typed name input, defaults for empty input, sprites, speaker dimming, and an approval notification. Backgrounds and sprites appeared sharp on first display.
+- Saves: saved to slot 1, reloaded the page, and loaded the slot. The game returned to the saved line.
+- Phone (iPhone 13 profile, landscape and portrait): checked the main menu, dialogue, game menu, Save, Preferences, and Journal.
+
+The phone check found the template's phone styles still active. They gave dialogue a dark textbox with dark text and pointed at bar, slider, scrollbar, and check box images that don't exist. The fix removed those overrides and the phone font sizes. Phones now use the desktop styles. The unused template images moved to `unused-template/phone/`. Lint and helper tests pass after the change.
+
+The quick menu links were hard to read over the textbox edge and backgrounds. They now sit on an opaque dark bar, 46 pixels tall on desktop and 64 on touch screens, and the textbox sits directly above it. Screenshots of narration, dialogue with sprites, a choice menu, and the phone layout showed no overlap with dialogue.
+
+The browser text input looks plainer than the rest of the game. Ren'Py uses it so phone keyboards open. Not tested: Safari, Firefox, real phones, audio (the game has none), and a full playthrough in the browser.
+
+## Scope and limitations
+
+These are automated route playthroughs plus manual review of selected screenshots, not a human read-through of every line. Fixed menu indices cover the three main routes and the initial repeat-menu behavior, not every possible combination of choices within each route. Save/load validation checks state restoration through Ren'Py's API; it does not exercise every save-menu button, cloud sync, or rollback sequence.
+
+Earlier development runs used the normal save directories. Their progress and preferences were moved, without deletion, to `test-saves-local/` and `test-saves-user/` so the user's first playthrough starts clean. Future documented test commands use a separate `--savedir`.

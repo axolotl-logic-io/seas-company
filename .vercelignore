@@ -1,0 +1,8 @@
+# Upload only the built web game and the Vercel settings.
+/*
+!/vercel.json
+!/dist
+/dist/*
+!/dist/SeasCompany-1.0-web
+# Debug symbols for the engine; players don't need them.
+/dist/SeasCompany-1.0-web/index.html.symbols
