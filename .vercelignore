@@ -1,8 +1,20 @@
-# Upload only the built web game and the Vercel settings.
+# Upload only runtime source and the files needed for a cloud build.
 /*
 !/vercel.json
-!/dist
-/dist/*
-!/dist/SeasCompany-1.0-web
-# Debug symbols for the engine; players don't need them.
-/dist/SeasCompany-1.0-web/index.html.symbols
+!/scripts
+/scripts/*
+!/scripts/build-web.sh
+!/scripts/vercel-build.sh
+!/game
+!/progressive_download.txt
+!/web-icon.png
+!/web-presplash.jpg
+/game/cache/
+/game/saves/
+/game/zz_autoplay.rpy
+**/*.rpyc
+**/*.rpymc
+**/*.rpyb
+**/*.bak
+**/*.log
+**/.DS_Store

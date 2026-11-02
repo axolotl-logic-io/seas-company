@@ -114,14 +114,14 @@ Opening `index.html` directly from disk does not work. Saves stay in the player'
 
 The web version is live at <https://seas-company.vercel.app>, in the existing `seas-company` Vercel project.
 
-To publish a new build, rebuild the web version, then run from the project root:
+To build and publish on Vercel, run from the project root:
 
 ```bash
 cd ~/workspace/seas-company
-./scripts/deploy-web.sh --prod
+vercel deploy --prod
 ```
 
-`.vercelignore` limits the upload to `vercel.json` and `dist/SeasCompany-1.0-web/`, without the engine's debug symbols. `vercel.json` serves that folder as a static site with no build step. To try a build at a separate preview URL first, leave out `--prod`.
+`.vercelignore` uploads game source, web icons, progressive download rules, and build scripts. It excludes local builds, saves, caches, development files, and credentials. Vercel runs `scripts/vercel-build.sh`, which downloads the pinned Ren'Py 8.5.3 SDK and web support into a temporary directory, builds the game without a display, and removes engine debug symbols. To create a preview deployment, run `vercel deploy` without `--prod`. No local SDK is needed for deployment.
 
 On phones, Ren'Py uses its touch quick menu and a plain browser text field for name, home, and pronoun input. Otherwise phones show the same layout as desktop.
 
@@ -134,10 +134,10 @@ Set `RENPY_SDK` to your Ren'Py 8.5.3 SDK directory if it is installed elsewhere.
 ```bash
 ./scripts/build-web.sh                  # Rebuild only
 vercel link --project seas-company      # Once per clone; select the existing team
-./scripts/deploy-web.sh                 # Rebuild and deploy a preview
-./scripts/deploy-web.sh --prod          # Rebuild and deploy production
+vercel deploy                         # Build on Vercel and deploy a preview
+vercel deploy --prod                  # Build on Vercel and deploy production
 ```
 
-GitHub stores source and art. Deployment uses the local SDK and uploads only the built web game through `.vercelignore`. Git pushes alone do not deploy: Vercel cannot serve an ignored build from a Git checkout with the current static configuration.
+GitHub stores source and art; generated builds stay ignored. The optional `scripts/deploy-web.sh` wrapper forwards its arguments to `vercel deploy`. Each deployment builds fresh from source on Vercel. The same build configuration supports Git deployments if the repository is connected in Vercel; connecting it enables production builds from `main` and branch previews.
 
 Image regeneration requires `IMAGE_API_KEY`; optionally set `IMAGE_API_BASE` to your OpenAI-compatible image service. Credentials are read from the environment and must never be committed. The asset builder and game do not require them.
