@@ -1,6 +1,6 @@
 # Sea's Company
 
-A non-commercial Gravity Falls fan visual novel adapted from `Sea's Company (Structured)(1).docx`. The game uses Ren'Py 8.5.3 at a virtual resolution of 1920 × 1080.
+A non-commercial Gravity Falls fan visual novel adapted from `Sea's Company (Structured)(2).docx`. The game uses Ren'Py 8.5.3 at a virtual resolution of 1920 × 1080.
 
 ## Run the game
 
@@ -10,7 +10,7 @@ To launch the standalone Mac application, run:
 open ~/workspace/seas-company/dist/SeasCompany.app
 ```
 
-The shareable archive is `dist/SeasCompany-1.0-mac.zip` (about 69 MB). It includes the runtime; players do not need the SDK. The application is not signed or notarized.
+The shareable archive is `dist/SeasCompany-1.0-mac.zip` (about 73 MB). It includes the runtime; players do not need the SDK. The application is not signed or notarized.
 
 To run the editable project with the installed SDK, run:
 
@@ -24,18 +24,20 @@ The story branches into an evening with Stan, a museum visit with Ford, or the f
 
 ## Adaptation details
 
-The adaptation preserves the document's dialogue, choices, alternate speaker names, approval changes, player inputs, action bubbles, and requested Ford poses. The audit of all 22 source comments is in [the comment audit](dev/COMMENT-AUDIT.md).
+The current manuscript supplies dialogue, narration, choices and approval changes. Expressions, entrances, exits, clothing and scene changes are inferred from that context in `game/script.rpy`. No image commands or inline emotion tags are required in the manuscript. [The current adaptation notes](dev/CONTEXT-ADAPTATION.md) explain staging and continuity decisions; [the original comment audit](dev/COMMENT-AUDIT.md) is historical.
 
-Presentation additions include chapter cards labeled “Timeline,” a Journal screen, speaker-focus dimming, a trust summary and route-dependent closing line, and an Atbash cipher on the title and ending screens. Obvious source typos were corrected, including a Stan line mislabeled as Ford and “Play” in place of “Player.”
+All three evening routes rejoin the hammock ending. Small prose bridges establish temporary lodging, a rest before the evening outings, and the museum sampling gloves. The opening repeat menu, two backstories, player details and approval values are preserved. The typo in Ford's sidelong glance is corrected to refer to Stan.
 
-Empty inputs use “Pat,” “nowhere in particular,” and “they/them.” Standard and custom subject/object pronoun pairs are supported. The 2026-11-03 revision adds the opening joke branch, removes the prototype-watercraft backstory, updates dialogue and approval points, and revises the dinner illustration. Stan wears a white suit for his animated evening entrance. Source expression names reuse matching existing expressions; his sly hand-rubbing is also described in the action bubble.
+Stan's sauna sprites wear tropical swim trunks and retain that outfit through expression changes. His coat returns after dressing. The smoking patron wears a speedo as narrated. Background patrons are framed without explicit nudity.
 
-The Patron wears a towel rather than a speedo; the generated art contains no nudity.
+Presentation additions include chapter cards labeled “Timeline,” a Journal screen, speaker-focus dimming, a trust summary and route-dependent closing line, and an Atbash cipher on the title and ending screens.
+
+Empty inputs use “Pat,” “nowhere in particular,” and “they/them.” Standard and custom subject/object pronoun pairs are supported.
 
 ## Asset sources
 
-- Story: the supplied Word document; `dev/sc.md` retains its comments with anonymized author metadata. The original Word files stay local and are ignored by Git.
-- Character sprites, backgrounds, dinner illustration, and base UI textures: generated for this adaptation using `gpt-image-2.5` through the local CLIProxyAPI service. Prompts and source images are preserved in `dev/`. The revised dinner and white-suit sprite were edited with the built-in image generation tool; their prompts are in `dev/revision-art.json`. These are not official production assets.
+- Story: the supplied Word document; `dev/sc.md` mirrors the revised story text without the old art directions. The original Word files stay local and are ignored by Git.
+- Character sprites, backgrounds, dinner illustration, and base UI textures: generated for this adaptation using `gpt-image-2.5` through the local CLIProxyAPI service. Prompts and source images are preserved in `dev/`. The revised dinner and white-suit sprite were edited with the built-in image generation tool; their prompts are in `dev/revision-art.json`. New swimwear sprites and the revised patron use the built-in image tool; paths and prompts are in `dev/context-art.json`. These are not official production assets.
 - UI panels, buttons, meters, and final image crops: `dev/build_assets.py`, using Pillow.
 - [Crimson Text](https://fonts.google.com/specimen/Crimson+Text), [IM FELL English SC](https://fonts.google.com/specimen/IM+Fell+English+SC), and [Pirata One](https://fonts.google.com/specimen/Pirata+One): Google Fonts, under the SIL Open Font License. Their notices are included in `game/fonts/`.
 - Engine: [Ren'Py](https://www.renpy.org/), under its bundled licenses.
@@ -61,7 +63,7 @@ SEAS_CHOICE=0 SEAS_DELAY=0.15 \
   --savedir "$HOME/workspace/seas-company/dev/test-saves"
 ```
 
-Use a fresh output directory for each run. `SEAS_CHOICE` selects the menu index, clamped to the available choices: 0 covers Stan's route, 1 covers Ford's, and 2 covers the film festival. The harness also opens the Journal, Save, Preferences, History, About, and Help screens. It saves at the ending, changes player state, reloads, and verifies that the saved state returned. `save_verified.json` records the successful round trip. `events.jsonl` records screenshots and source locations; `complete.json` confirms that the ending was reached. The separate `--savedir` keeps test progress out of normal player saves. This is route coverage, not exhaustive coverage of every combination of choices.
+Use a fresh output directory for each run. `SEAS_CHOICE` selects the menu index, clamped to the available choices: 0 covers Stan's route, 1 covers Ford's, and 2 covers the film festival. The harness also opens the Journal, Save, Preferences, History, About, and Help screens. It saves at the ending, changes player state, reloads, and verifies that the saved state returned. `save_verified.json` records the successful round trip. `events.jsonl` records screenshots and source locations; `complete.json` confirms that the ending was reached. The separate `--savedir` keeps test progress out of normal player saves. This is route coverage, not exhaustive coverage of every combination of choices. `SEAS_EVENING=0`, `1`, or `2` can override just the evening route while `SEAS_CHOICE` varies other branches. Events also record displayed character attributes to verify costume continuity.
 
 Without `SEAS_AUTOPLAY`, the development harness does nothing. Distribution builds exclude it and the entire `dev/` directory.
 
@@ -97,7 +99,7 @@ cd ~/Applications/renpy-8.5.3-sdk
   --destination ~/workspace/seas-company/dist/SeasCompany-1.0-web
 ```
 
-This writes `dist/SeasCompany-1.0-web/` (about 73 MB) and the same files as `dist/SeasCompany-1.0-web.zip`. The build reads three files from the project root:
+This writes `dist/SeasCompany-1.0-web/` (about 78 MB) and the same files as `dist/SeasCompany-1.0-web.zip`. The build reads three files from the project root:
 
 - `web-icon.png`: the icon for the installable web app, made by `dev/build_assets.py`.
 - `web-presplash.jpg`: the image shown while the game loads, made by `dev/build_assets.py`.

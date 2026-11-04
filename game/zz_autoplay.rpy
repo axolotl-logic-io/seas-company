@@ -10,6 +10,7 @@ init 999 python:
 
     _ap_dir = os.environ.get("SEAS_AUTOPLAY")
     _ap_choice = int(os.environ.get("SEAS_CHOICE", "0"))
+    _ap_evening = os.environ.get("SEAS_EVENING")
     _ap_delay = float(os.environ.get("SEAS_DELAY", "0.7"))
     _ap_state = { "n": 0, "started": False, "ui_index": 0 }
     _ap_menus = ["journal", "save", "preferences", "history", "about", "help"]
@@ -29,7 +30,10 @@ init 999 python:
         with open(os.path.join(_ap_dir, "events.jsonl"), "a") as events:
             events.write(json.dumps({"file": os.path.basename(fn),
                 "location": renpy.get_filename_line(), "speaker": str(store.speaking_tag),
-                "stan": store.stan_approval, "ford": store.ford_approval}) + "\n")
+                "stan": store.stan_approval, "ford": store.ford_approval,
+                "stan_attributes": renpy.get_attributes("stan"),
+                "ford_attributes": renpy.get_attributes("ford"),
+                "images": sorted(renpy.get_showing_tags())}) + "\n")
 
     def _ap_check_save():
         marker = os.path.join(_ap_dir, "save_test.json")
@@ -92,7 +96,10 @@ init 999 python:
         if choice:
             _ap_shot("_choice")
             items = choice.scope["items"]
-            item = items[min(_ap_choice, len(items) - 1)]
+            index = _ap_choice
+            if _ap_evening is not None and any("Join Stan for" in i.caption for i in items):
+                index = int(_ap_evening)
+            item = items[min(index, len(items) - 1)]
             return renpy.run(item.action)
 
         if renpy.get_screen("input"):

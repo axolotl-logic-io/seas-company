@@ -172,12 +172,25 @@ init python:
 
     renpy.image(("stan", "sly"), At("images/sprites/stan_grin.png", focus("stan")))
 
-    # Source expression names mapped to the existing matching artwork.
+    # Expression aliases chosen by context; the manuscript need not name assets.
     renpy.image(("stan", "excited"), At("images/sprites/stan_grin.png", focus("stan")))
     renpy.image(("ford", "embarrassed"), At("images/sprites/ford_blush.png", focus("ford")))
     renpy.image(("ford", "serious"), At("images/sprites/ford_frown.png", focus("ford")))
 
-image patron = At("images/sprites/patron.png", focus("patron"))
+# Swim expressions are explicit in both show statements and dialogue.
+# Ren'Py can otherwise prefer a shorter coat image name on expression changes.
+init python:
+    for _expr, _swim_expr in {
+        "neutral": "smile", "smile": "smile", "grin": "smile",
+        "laugh": "laugh", "blush": "blush", "embarrassed": "blush",
+        "frown": "anxious", "uncomfortable": "anxious",
+        "anxious": "anxious", "grimace": "anxious",
+    }.items():
+        renpy.image(("stan", "swim", _expr),
+            At("images/sprites/stan_swim_%s.png" % _swim_expr, focus("stan")))
+
+
+image patron = At("images/sprites/patron_speedo.png", focus("patron"))
 image lizard = At("images/sprites/lizard.png", focus("lizard"))
 
 
@@ -202,8 +215,8 @@ image sun_glare:
 ## Transforms
 ################################################################################
 
-## Sprite positions. The script follows the source document: Stan on the left,
-## Ford on the right.
+## Usual two-person composition: Stan on the left, Ford on the right.
+## Solo scenes can move them to keep the narrated subject visible.
 transform left:
     xpos 0.25 xanchor 0.5 ypos 1.0 yanchor 1.0
 

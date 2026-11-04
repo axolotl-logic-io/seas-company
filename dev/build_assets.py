@@ -113,7 +113,7 @@ def sprite_assets():
         n = os.path.splitext(os.path.basename(f))[0]
         im = Image.open(f).convert("RGBA")
         # Leave headroom for the dancing entrance's sway and bounce.
-        scale = 1020 / im.height if n == "stan_suit" else 0.7
+        scale = 1020 / im.height if n == "stan_suit" or n.startswith("stan_swim_") or n == "patron_speedo" else 0.7
         im = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
         im.save(f"{IMG}/sprites/{n}.png", optimize=True)
 

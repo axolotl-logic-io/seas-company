@@ -1,3 +1,25 @@
+# Narration-led revision validation (2026-11-04)
+
+Updated against `Sea's Company (Structured)(2).docx`; `sc.md` now mirrors this manuscript without superseded art directions. Adaptation decisions are in `CONTEXT-ADAPTATION.md` and exact built-in image generation prompts in `context-art.json`.
+
+Ren'Py 8.5.3 lint passes without warnings: 340 dialogue blocks, 6,322 words, 12 menus (`context-lint.log`). All three helper tests pass (`context-helper-tests.log`). Five playthroughs reach the ending and verify save/load in separate save directories:
+
+| Coverage | Stan / Ford approval | Evidence directory |
+| --- | --- | --- |
+| Stan, corrected costume sequence | 15 / 2 | `validation/context-stan-verified` |
+| Ford, museum lookout | 0 / 13 | `validation/context-final1` |
+| Film festival | 1 / 6 | `validation/context-final2` |
+| Ford, wander during testing | 7 / 1 | `validation/context-museum0` |
+| Ford, help with testing | 0 / 10 | `validation/context-museum2` |
+
+Each directory has `complete.json`, `save_verified.json`, source-linked events and screenshots. Costume assertions in `costume_verified.json` confirm every visible Stan frame from undressing until the club exit has `swim`, and later dressed frames do not. Reviewed screenshots of the laughing swimsuit sprite, the serious warning, and the dressed apology; transparent sprites render cleanly against the backgrounds. The new patron art matches the speedo, lighter and hand stamp. Existing backgrounds already support the narrated locations.
+
+An initial harness run failed because displayed image tags are a set, which JSON cannot serialize. The harness now writes a sorted list. Initial Stan coverage then caught Ren'Py dropping the swim attribute when choosing shorter expression names. The game now specifies swim attributes explicitly in both dialogue and show statements; the corrected Stan run is the release evidence. Other route behavior was unchanged by that fix.
+
+Mac and web distributions rebuilt. Refreshed `dist/SeasCompany.app` from the Mac archive and verified its script exactly matches the workspace. Both archives exclude the autoplay harness and development files. Web source is rebuilt, but no browser smoke test or live deployment was performed for this revision. These checks cover all three evening routes and all museum investigation branches, not every possible combination of earlier choices. Start a new game for this revision because old saves can reference changed script passages.
+
+---
+
 # Document revision validation (2026-11-03)
 
 Updated against `Sea's Company (Structured)(1).docx`, comparing paragraph text directly with the previous Word source. The anonymized source mirror in `sc.md` reflects the new document.
