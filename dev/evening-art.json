@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-04",
+  "assets": [
+    {
+      "source": "dev/spr/stan_evening_anxious.png",
+      "runtime": "game/images/sprites/stan_evening_anxious.png",
+      "prompt": "Edit target: reference 1, the neutral Stan Pines visual novel sprite. Reference 2 shows his evening clothes. Preserve reference 1's exact character identity, stocky older adult proportions, red beanie, glasses, gray hair, stubble, linework, standing hands-at-hips pose, head-to-mid-thigh framing, and navy anorak. Replace his WHITE UNDERSHIRT with the BURGUNDY BUTTON-UP DRESS SHIRT from reference 2, top buttons open with chest hair visible. Under the open navy anorak, show the WHITE SUIT JACKET lapels around that burgundy shirt, and replace dark trousers with WHITE SUIT TROUSERS. No radio or utility belt. This is the SAME white suit and burgundy shirt from the dancing entrance, with his navy anorak worn on top for cold weather. Expression: worried tense expression, concerned eyebrows and closed downturned mouth. Clean fully transparent background including between arms and torso. No text, glow or background scenery."
+    },
+    {
+      "source": "dev/spr/stan_evening_blush.png",
+      "runtime": "game/images/sprites/stan_evening_blush.png",
+      "prompt": "Change only this game character's facial expression to a bashful, embarrassed smile with rosy cheeks and eyes glancing aside. Preserve the same navy anorak over a white suit and burgundy shirt, pose, identity, proportions, linework and framing exactly. Fully transparent background."
+    },
+    {
+      "source": "dev/spr/stan_evening_smile.png",
+      "runtime": "game/images/sprites/stan_evening_smile.png",
+      "prompt": "Remove the pink blush marks from this cartoon character's cheeks. Keep the rest of the image exactly unchanged. Preserve transparency."
+    }
+  ],
+  "notes": [
+    "The anorak is an outer layer over the same white suit and burgundy dress shirt from the dance.",
+    "The concerned sprite was generated using the original coat and dancing-suit references. The embarrassed expression was edited from that accepted sprite. The relaxed smile was derived by removing the cheek blush from the embarrassed sprite.",
+    "Several smile and neutral expression attempts received output moderation rejections; these are accepted generated variants.",
+    "All three source images are converted to 1020px-high transparent PNGs by build_assets.py. Explicit evening image attributes on both show statements and dialogue preserve the outfit across expression changes.",
+    "The smile edit retained stray opacity outside the character. Ren\u2019Py AlphaMask uses the matching blush source pose as a clean silhouette at render time; source PNGs remain unchanged."
+  ]
+}

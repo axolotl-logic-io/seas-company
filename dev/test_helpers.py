@@ -22,7 +22,8 @@ class HelpersTest(unittest.TestCase):
             "store": self.store, "_": lambda text: text, "__": lambda text: text,
             "config": SimpleNamespace(font_replacement_map={}),
             "renpy": SimpleNamespace(notify=self.notifications.append, image=lambda *args: None),
-            "At": lambda *args: None, "focus": lambda tag: None,
+            "At": lambda *args: None, "AlphaMask": lambda *args: None,
+            "focus": lambda tag: None,
         }
         exec(python_blocks(GAME / "definitions.rpy"), self.env)
         exec(python_blocks(GAME / "seas_screens.rpy"), self.env)

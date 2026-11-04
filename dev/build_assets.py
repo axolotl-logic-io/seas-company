@@ -107,13 +107,17 @@ def bg_assets():
         im.save(f"{IMG}/bg/{prefix} {n.replace('_', ' ')}.jpg", quality=90)
 
 
-def sprite_assets():
+def sprite_assets(names=None):
     os.makedirs(IMG + "/sprites", exist_ok=True)
     for f in glob.glob(f"{SRC}/spr/*.png"):
         n = os.path.splitext(os.path.basename(f))[0]
+        if names is not None and n not in names:
+            continue
         im = Image.open(f).convert("RGBA")
-        # Leave headroom for the dancing entrance's sway and bounce.
-        scale = 1020 / im.height if n == "stan_suit" or n.startswith("stan_swim_") or n == "patron_speedo" else 0.7
+        # Match the evening and swim outfits, leaving headroom for the dance.
+        fit_height = (n in ("stan_suit", "patron_speedo")
+                      or n.startswith(("stan_swim_", "stan_evening_")))
+        scale = 1020 / im.height if fit_height else 0.7
         im = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
         im.save(f"{IMG}/sprites/{n}.png", optimize=True)
 
