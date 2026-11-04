@@ -1,3 +1,13 @@
+# Evening outfit and ending hint (2026-11-04)
+
+The dancing entrance still uses the white suit and burgundy dress shirt. New `evening` images put the navy anorak over those clothes; the outfit stays explicit through all clothed dialogue and show statements on Stan's route. It returns after the swimwear sequence and stays until the narrated change into dry clothes aboard the boat. Removed the ending's alphabet hint and its unused style; the cipher remains.
+
+Three Stan-route playthroughs (`validation/evening-outfit0`, `evening-outfit1`, and `evening-outfit2`) cover all outdoor dialogue branches and all three toasts. Each reaches the ending and verifies save/load. `check_evening_costumes.py` verifies the displayed attributes through the dance, layered evening clothes, swimwear, and return to evening clothes. These runs contain 37/38/35 evening-outfit frames and 29/30/29 swimwear frames, respectively. The existing helper tests pass. Ren'Py lint passes without warnings: 341 dialogue blocks, 6,335 words, 12 menus.
+
+The smile image needed a rendering correction for stray opacity outside the silhouette. Its matching blush pose now supplies a clean `AlphaMask` in Ren'Py; the original generated PNGs remain intact. Exact accepted prompts, paths and generation limitations are in `evening-art.json`. `build_assets.py` can build selected sprite names without rewriting unrelated assets.
+
+A final render-corrected playthrough (`validation/evening-final`) repeats the ending, save/load and costume assertions. Reviewed the anorak-over-suit screenshot after the dance, the dressed apology, and the ending without its hint. Refreshed Mac and web packages match the final script, image definitions and ending screen byte for byte, and exclude the development harness.
+
 # Narration-led revision validation (2026-11-04)
 
 Updated against `Sea's Company (Structured)(2).docx`; `sc.md` now mirrors this manuscript without superseded art directions. Adaptation decisions are in `CONTEXT-ADAPTATION.md` and exact built-in image generation prompts in `context-art.json`.

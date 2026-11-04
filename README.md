@@ -28,16 +28,16 @@ The current manuscript supplies dialogue, narration, choices and approval change
 
 All three evening routes rejoin the hammock ending. Small prose bridges establish temporary lodging, a rest before the evening outings, and the museum sampling gloves. The opening repeat menu, two backstories, player details and approval values are preserved. The typo in Ford's sidelong glance is corrected to refer to Stan.
 
-Stan's sauna sprites wear tropical swim trunks and retain that outfit through expression changes. His coat returns after dressing. The smoking patron wears a speedo as narrated. Background patrons are framed without explicit nudity.
+Stan's sauna sprites wear tropical swim trunks and retain that outfit through expression changes. His navy anorak goes over the white suit and burgundy shirt after the dance and after dressing to leave the club. His usual outfit returns only after changing into dry clothes on the boat. The smoking patron wears a speedo as narrated. Background patrons are framed without explicit nudity.
 
-Presentation additions include chapter cards labeled “Timeline,” a Journal screen, speaker-focus dimming, a trust summary and route-dependent closing line, and an Atbash cipher on the title and ending screens.
+Presentation additions include chapter cards labeled “Timeline,” a Journal screen, speaker-focus dimming, a trust summary and route-dependent closing line, and an Atbash cipher on the title and ending screens. The ending cipher has no alphabet hint.
 
 Empty inputs use “Pat,” “nowhere in particular,” and “they/them.” Standard and custom subject/object pronoun pairs are supported.
 
 ## Asset sources
 
 - Story: the supplied Word document; `dev/sc.md` mirrors the revised story text without the old art directions. The original Word files stay local and are ignored by Git.
-- Character sprites, backgrounds, dinner illustration, and base UI textures: generated for this adaptation using `gpt-image-2.5` through the local CLIProxyAPI service. Prompts and source images are preserved in `dev/`. The revised dinner and white-suit sprite were edited with the built-in image generation tool; their prompts are in `dev/revision-art.json`. New swimwear sprites and the revised patron use the built-in image tool; paths and prompts are in `dev/context-art.json`. These are not official production assets.
+- Character sprites, backgrounds, dinner illustration, and base UI textures: generated for this adaptation using `gpt-image-2.5` through the local CLIProxyAPI service. Prompts and source images are preserved in `dev/`. The revised dinner and white-suit sprite were edited with the built-in image generation tool; their prompts are in `dev/revision-art.json`. New swimwear sprites and the revised patron use the built-in image tool; paths and prompts are in `dev/context-art.json`. The anorak-over-suit expressions are recorded in `dev/evening-art.json`. These are not official production assets.
 - UI panels, buttons, meters, and final image crops: `dev/build_assets.py`, using Pillow.
 - [Crimson Text](https://fonts.google.com/specimen/Crimson+Text), [IM FELL English SC](https://fonts.google.com/specimen/IM+Fell+English+SC), and [Pirata One](https://fonts.google.com/specimen/Pirata+One): Google Fonts, under the SIL Open Font License. Their notices are included in `game/fonts/`.
 - Engine: [Ren'Py](https://www.renpy.org/), under its bundled licenses.

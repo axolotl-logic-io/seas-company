@@ -611,13 +611,13 @@ label stan_after_dark:
     show stan suit at center, dance with dissolve
 
     "Stan dances out of the Stan-O-War 3 in a white suit with a burgundy dress shirt, its top buttons open and displaying an almost worrying amount of chest hair."
-    show stan grin at center
+    show stan evening grin at center
     "He wraps his anorak around him before exchanging some cautionary words with Ford as they part ways."
     "Dressed as best you can in your own clothes, wearing your bathing suit underneath, you once again thank your lucky stars that of all the mariners that could've scooped you out of the ocean, it was these two generous, likeable dudes."
 
     p "Aaah, crap. It just occurred to me; they're going to want ID at the door, aren't they?"
 
-    s neutral "Don't worry about a thing, kid. Once we're there, follow my lead. No questions."
+    s evening neutral "Don't worry about a thing, kid. Once we're there, follow my lead. No questions."
 
     p "Uhhh... okay."
 
@@ -633,7 +633,7 @@ label stan_after_dark:
     "You see a flash of metal in his hand as he manipulates the padlock, which opens easily. Next thing you know, he's pulling you through the fence and closing it behind you."
 
     scene bg club alley
-    show stan neutral at left
+    show stan evening neutral at left
     with dissolve
 
     "You find yourself in a shadowy nook behind the club. It boasts a couple of garbage bins, and a sand-filled bucket sits by a propped open fire door."
@@ -653,13 +653,13 @@ label stan_after_dark:
 
     p "What the {i}heck{/i} are we doing?"
 
-    s frown "Sshh."
+    s evening frown "Sshh."
 
     "Stan flicks his eyes toward the smoker. Once the man finishes his cigarette and reenters the bar, Stan relaxes."
 
     hide patron with dissolve
 
-    s neutral "Gimme your hand."
+    s evening neutral "Gimme your hand."
 
     "You reach out and he grabs your hand, uncapping the writing utensil, a blue ballpoint pen, with his mouth. He begins to draw on your hand, occasionally using his thumb to smudge the lines."
     "When he releases it, you take a look at his work. It looks identical to the blue monkey stamp you saw on the hand of the other patron. He gets busy drawing on his own hand."
@@ -668,24 +668,24 @@ label stan_after_dark:
 
         "\"Stanley, you are the coolest person I have ever met.\"":
             p "Stanley, you are the coolest person I have ever met."
-            s blush "Heh, I have my moments. You did great too, kiddo!"
+            s evening blush "Heh, I have my moments. You did great too, kiddo!"
             p "But I didn't do anything!"
-            s grin "Exactly! You didn't balk, you didn't sweat, you didn't backpedal. You're a natural. Now to get some free drinks."
+            s evening grin "Exactly! You didn't balk, you didn't sweat, you didn't backpedal. You're a natural. Now to get some free drinks."
             $ approve("stan", 2)
 
         "\"Are you sure this is a good idea? What if they don't buy it?\"":
             p "Are you sure this is a good idea? What if they don't buy it?"
-            s neutral "Trust me, kiddo. This is kids' stuff. You should try breaking out of a government facility while floating around in zero gravity."
+            s evening neutral "Trust me, kiddo. This is kids' stuff. You should try breaking out of a government facility while floating around in zero gravity."
             p "What?"
-            s grin "Don't worry about it. Now to get some free drinks."
+            s evening grin "Don't worry about it. Now to get some free drinks."
 
         "\"Wow. No wonder you've been to jail multiple times.\"":
             p "Wow. No wonder you've been to jail multiple times."
-            s frown "Hey, everything's legal if there're no cops around."
+            s evening frown "Hey, everything's legal if there're no cops around."
             $ approve("stan", -1)
 
     scene bg club
-    show stan neutral at left
+    show stan evening neutral at left
     with slowfade
 
     "Stan leads the way into the club. Nobody stops you as you weave between naked, sweaty bodies toward a wall of cubbies."
@@ -784,40 +784,40 @@ label stan_after_dark:
     scene bg club street with dissolve
 
     "There are raised voices back in the center of the club as you pull on your boots. Stan practically drags you out the front door."
-    show stan anxious at center with dissolve
+    show stan evening anxious at center with dissolve
     "There are a couple of taxis parked outside, and he leans into one of their windows. You can't catch what was said inside, but as Stan ushers you to a nearby alley and pulls you into the shadows, you hear the taxi burn rubber, leaving the area at high speed just as the club doors open."
     "Lizard Head is there with a few others. All are speaking Icelandic rapidly, but you sense defeat in their tones as the taxi speeds out of sight. Stan lets out a relieved sigh."
 
     scene bg club alley
-    show stan embarrassed at center
+    show stan evening embarrassed at center
     with dissolve
 
-    s embarrassed "Well, I guess that's enough fun for one night. Sorry about all the law breaking and the running and the... everything else..."
+    s evening embarrassed "Well, I guess that's enough fun for one night. Sorry about all the law breaking and the running and the... everything else..."
 
     menu:
 
         "Are you serious? This has been one of the best nights of my life!":
             p "Are you serious? This has been one of the best nights of my life! Stan, I know I'm standing here shivering because my wet bathing suit is soaking into my clothes, but I wouldn't change a moment of it!"
-            show stan grin at center, hop
-            s grin "I knew you were a kindred spirit, ya little hellion! Now, let's get back to the boat and get into some dry clothes. I'm freezing my balls off!"
+            show stan evening grin at center, hop
+            s evening grin "I knew you were a kindred spirit, ya little hellion! Now, let's get back to the boat and get into some dry clothes. I'm freezing my balls off!"
             $ approve("stan", 2)
 
         "This is HEAVY, Stan! What if I get taken to ICE JAIL?":
             p "This is HEAVY, Stan! What if I get taken to ICE JAIL! I don't want to get turned into a snowman!"
-            s grimace "Relax, kid, they're off our trail now. We just need to get back to the Stan-O-War 3 without freezing our asses off."
+            s evening grimace "Relax, kid, they're off our trail now. We just need to get back to the Stan-O-War 3 without freezing our asses off."
             p "Yes please. Put me back in the boat!"
             $ approve("stan", -1)
 
         "Good, they're distracted. We've got to get back to the boat.":
             p "Good, they're distracted. We've got to get back to the boat. It's down that road, right?"
-            s neutral "Sure is. Follow my lead."
+            s evening neutral "Sure is. Follow my lead."
             $ approve("stan", 1)
 
     scene bg cabin night
-    show stan smile at left
+    show stan evening smile at left
     with slowfade
 
-    s smile "Whoof! Home Sweet Boat!"
+    s evening smile "Whoof! Home Sweet Boat!"
 
     p "You said it. I feel like a drunk raisin. Wait a minute, shouldn't we wait up for Ford?"
 
@@ -825,9 +825,12 @@ label stan_after_dark:
 
     f smile "That won't be necessary. I was able to retrieve a sample and run some tests, and you won't believe what I've discovered!" (show_act=_("stepping in from his lab"))
 
-    s smile "Save it for tomorrow, nerd. The kid and I are tuckered out."
+    s evening smile "Save it for tomorrow, nerd. The kid and I are tuckered out."
 
     p "Quit it with the 'kid', Stan, I am an adult!"
+
+    hide stan with dissolve
+    "After changing into dry clothes, you join Ford to get your bed ready."
 
     jump outro
 

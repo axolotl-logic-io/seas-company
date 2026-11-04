@@ -190,6 +190,23 @@ init python:
             At("images/sprites/stan_swim_%s.png" % _swim_expr, focus("stan")))
 
 
+# The navy anorak is an outer layer over the white suit and burgundy shirt.
+# Keep this attribute explicit on dialogue as well as show statements.
+init python:
+    for _expr, _evening_expr in {
+        "neutral": "smile", "smile": "smile", "grin": "smile",
+        "laugh": "smile", "blush": "blush", "embarrassed": "blush",
+        "frown": "anxious", "uncomfortable": "anxious",
+        "anxious": "anxious", "grimace": "anxious",
+    }.items():
+        _evening_art = "images/sprites/stan_evening_%s.png" % _evening_expr
+        if _evening_expr == "smile":
+            # This face-only edit retained stray opacity outside the figure.
+            # Its matching source pose supplies a clean silhouette at render time.
+            _evening_art = AlphaMask(_evening_art, "images/sprites/stan_evening_blush.png")
+        renpy.image(("stan", "evening", _expr), At(_evening_art, focus("stan")))
+
+
 image patron = At("images/sprites/patron_speedo.png", focus("patron"))
 image lizard = At("images/sprites/lizard.png", focus("lizard"))
 

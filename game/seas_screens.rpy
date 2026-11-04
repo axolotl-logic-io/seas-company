@@ -223,7 +223,6 @@ screen the_end():
             null height 24
 
             text "GSV HVZ PVVKH RGH HVXIVGH" style "ending_cipher"
-            text _("(Hint: A is Z.)") style "ending_hint"
 
             null height 24
 
@@ -241,11 +240,6 @@ style ending_cipher is default:
     kerning 6
     color "#3b2a1c"
     xalign 0.5
-
-style ending_hint is ending_cipher:
-    size 22
-    kerning 0
-    color "#7a6650"
 
 style ending_button is button:
     background Frame("gui/button/choice_idle_background.png", 70, 20)
