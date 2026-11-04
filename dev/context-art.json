@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-04",
+  "assets": [
+    {
+      "source": "dev/spr/stan_swim_smile.png",
+      "runtime": "game/images/sprites/stan_swim_smile.png",
+      "prompt": "Edit target: the referenced Stan Pines sprite. Preserve exact cartoon identity, red wool beanie, glasses, gray hair, large nose, stubble, stocky broad older adult build, outline style and head-to-mid-thigh framing. Replace ALL clothing below neck with tropical patterned swim trunks, bare solid hairy chest and belly, hairy arms. Hands resting at hips, friendly relaxed smile. The swim trunks are fully opaque and modest. No coat, undershirt, belt, radio or towel. Transparent background. This is a visual novel sprite matching the reference scale. No text."
+    },
+    {
+      "source": "dev/spr/stan_swim_laugh.png",
+      "runtime": "game/images/sprites/stan_swim_laugh.png",
+      "prompt": "Edit the reference visual novel sprite of Stan Pines. Keep his identity, stocky body, beanie, glasses, pose, tropical swim trunks, framing and proportions exactly unchanged. Remove ALL colored background haze, glow, shadows and halo outside the silhouette: exterior pixels must be fully transparent including the gaps between arms and torso. Expression: laughing heartily, happy eyes and open smiling mouth. Clean cartoon linework. No text."
+    },
+    {
+      "source": "dev/spr/stan_swim_anxious.png",
+      "runtime": "game/images/sprites/stan_swim_anxious.png",
+      "prompt": "Change only the facial expression of the referenced game character: worried, serious eyes and a tense closed mouth. Preserve all other features, clothing, composition and pose. Transparent background."
+    },
+    {
+      "source": "dev/spr/stan_swim_blush.png",
+      "runtime": "game/images/sprites/stan_swim_blush.png",
+      "prompt": "Change only the facial expression of the referenced game character: bashful, softly smiling with rosy cheeks. Preserve all other features, clothing, composition and pose. Transparent background."
+    },
+    {
+      "source": "dev/spr/patron_speedo.png",
+      "runtime": "game/images/sprites/patron_speedo.png",
+      "prompt": "Edit the referenced cartoon Patron sprite. Preserve this adult man's identity, blond hair, mustache, facial expression, cigarette, open lighter, blue monkey stamp on the back of his hand, body shape, pose and same head-to-mid-thigh framing. Replace both towels with a plain opaque navy blue speedo swimsuit, exactly as described in the story. Remove the shoulder towel and waist towel completely. Clean transparent background, no glow, no halo, no text. Same cartoon linework."
+    }
+  ],
+  "notes": [
+    "Four swim expressions cover the narration; matching expression aliases retain the swim outfit during dialogue.",
+    "The first expression batch stopped on an output moderation rejection. Two facial-expression-only edits subsequently succeeded.",
+    "The original source artwork is preserved; the builder scales the new sprites to 1020px high."
+  ]
+}
