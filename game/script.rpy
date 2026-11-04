@@ -1,5 +1,5 @@
 ## Sea's Company
-## Adapted from "Sea's Company (Structured).docx".
+## Adapted from "Sea's Company (Structured)(1).docx".
 ##
 ## Notes on the source conventions (from the document's comments):
 ## - "Scene bg X" clears the screen and shows a background.
@@ -32,10 +32,10 @@ label rescue:
     show sun_glare
     with slowfade
 
-    "Nothing but dark water as far as the eye can see. The sun beats mercilessly upon your dehydrated body, sprawled as it is across a flotilla of plastic garbage and styrofoam chunks."
+    "Nothing but dark water as far as the eye can see. The sun beats mercilessly upon your dehydrated body, sprawled as it is across a small flotilla of plastic garbage and styrofoam chunks."
     "You've long since lost the ability to raise your head to scan the horizon for rescue. You pull your hat down further over your face, resigned to your fate."
 
-    "Your small raft is jostled by waves. Vaguely, you register a roaring motor assaulting your ears, but after days of silence you assume it's your own parched brain screaming at itself."
+    "Your small collection of lashed-together garbage is jostled by waves. Vaguely, you register a roaring motor assaulting your ears, but after days of silence you assume it's your own parched brain screaming at itself."
     "You lack the energy to care. Your every nerve and sinew ache with dusty, creaking pain."
 
     with vpunch
@@ -43,7 +43,7 @@ label rescue:
 
     s_voice "Hey! You alive down there?"
 
-    "You don't know if this is just another hallucination, but the smell of exhaust smoke ignites something inside you and you do your best to raise your arm in a limp wave."
+    "You don't know if this is just another hallucination, but the smell of exhaust smoke reignites something inside you and you do your best to raise your arm in a limp wave."
 
     s_voice "They're alive! Sixer, full stop!"
 
@@ -52,12 +52,12 @@ label rescue:
     scene black with blackout
     pause 1.0
 
-    "You flounder toward consciousness with a vague, fever-dream recollection of someone holding a cup to your lips as you drank water, and then later on some kind of rich broth."
-    "You reach out weakly and encounter only soft blankets. You can still feel the gentle roll of the ocean."
+    "You flounder toward consciousness with a vague, fever-dream recollection of someone holding a cup to your lips as you drank water, and a while later, some kind of rich broth."
+    "Reaching out weakly, you encounter only soft blankets. You can still feel the gentle roll of the ocean."
 
     scene bg bunk at wake
 
-    "When your eyes open, you find yourself alone in a claustrophobic, closet-sized room. You can hear the lapping of waves, the deep hum of a motor, and the murmur of a conversation somewhere outside."
+    "When your eyes open, you find yourself alone in a claustrophobic, closet-sized bedroom. You can hear the lapping of waves, the deep hum of a motor, and the murmur of a conversation somewhere outside."
     "One of the voices raises a bit and you can just make out a word, \"{b}...Reykjavik!{/b}\" before it recedes into the ambient soundscape."
 
     p "Reykjavik? {i}ICELAND??{/i} {b}That's impossible!{/b} How long was I drifting out there?"
@@ -108,9 +108,23 @@ label rescue:
 
     show stan smile at left
 
-    "Beanie Guy chuckles to himself as Cleft Chin guy shines a small pen-light into your eyes and grasps your wrist for a moment, taking your pulse before noticing the empty cup by the bedside."
+    menu:
 
-    f_cleft "Ah, you found the water, good. You were abysmally dehydrated. I highly doubt you would've made it another day out there."
+        "Bust out in laughter, hurting your dry throat.":
+            p "Oh for Pete's sake, I can't believe I've become a meme!"
+            show stan laugh at left, hop
+            s_beanie grin "See, Sixer! EVERYBODY knows that joke!"
+            $ approve("stan", 2)
+
+        "Blink at the man.":
+            p "Uhh... okay."
+            show stan embarrassed
+            f_cleft grin "I told you that joke would be in bad taste, Stanley."
+            $ approve("ford", 2)
+
+    "Beanie Guy rocks on the balls of his feet, gracefully remaining still as the deck tilts to and fro. Cleft Chin guy shines a small pen-light into your eyes and grasps your wrist for a moment, taking your pulse before noticing the empty bottle by the bedside."
+
+    f_cleft "Ah, you found the water, good. You were abysmally dehydrated. I highly doubt you would've made it another day out there if we hadn't spotted you."
 
     "His tone and posture give you the nagging feeling that your predicament was somehow your own fault. You wonder if that's true."
 
@@ -119,13 +133,14 @@ label rescue:
     menu:
 
         "Thank them.":
-            p "I thought so, too. I owe you my life. Thank you for..."
+            p "It certainly felt that way."
+            p "I owe you my life. Thank you for..." (show_act=_("you take a deep breath"))
             p "{i}...{/i}" (show_act=_("you gesture weakly to your pitiful body and its surroundings"))
-            p "...all this."
+            p "...all the everything." (show_act=_("you give them a wan smile"))
             "Both men blush and smile."
             show stan uncomfortable
             show ford uncomfortable
-            s_beanie "Hey, no problem. I'm just glad we got to you in time."
+            s_beanie "Hey, no problem. We're just glad we got to you in time."
             $ approve("stan", 2)
             $ approve("ford", 2)
 
@@ -140,12 +155,7 @@ label rescue:
             p "Riiiiight."
             f_cleft frown "It was that or let your vital organs shut down."
             p "Okay, fine, that probably makes sense."
-
-        "Bust out in laughter, hurting your dry throat.":
-            p "Oh for cripes sake, I can't believe I've become a meme!"
-            show stan laugh at left, hop
-            s_beanie grin "See, Sixer! EVERYBODY knows that joke!"
-            $ approve("stan", 2)
+            $ approve("ford", 1)
 
     show ford neutral
     show stan neutral
@@ -156,7 +166,7 @@ label rescue:
 
     "He places a pile of what are clearly their spare clothes on the side of the bed before straightening and folding his arms behind his back."
 
-    s_beanie smile "Oh yeah, by the way, I'm Stan and this nerd is my brother Ford. Welcome aboard the Stan-O-War 3! What's yer name and where're ya from, anyway?"
+    s_beanie smile "Oh yeah, by the way, I'm Stan and this nerd is my brother Ford. Welcome aboard the Stan o'War 3! What's yer name and where're ya from, anyway?"
 
     window hide
 
@@ -174,36 +184,27 @@ label rescue:
 
     menu:
 
-        "You were testing out a prototype watercraft.":
-            p "Well, I was testing out a prototype submersible watercraft when the craft's Artificial Intelligence decided it wanted to explore the ocean on its own."
-            p "It went rogue, ejecting me from the cockpit before diving out of sight."
-            show ford finger at right, hop
-            f "Ha! I would expect as much! I've never met an artificial intelligence that had an ounce of loyalty."
-            f grin "Still, I'd love to hear more! That is fascinating work! I'm glad we happened along before you succumbed to the elements."
-            $ approve("ford", 2)
-
         "You tumbled off a cruise ship while drunk.":
             p "Well, last I remember, I was in a drinking contest with a circus contortionist on a cruise ship."
-            s smile "Sweet Moses! You fell off a cruiseliner? Those things are huge! That drop had to be a doozy. I hope you won, at least!"
+            s smile "Hot Belgian Waffles, you fell off a cruiseliner? Those things are huge! That drop had to be a doozy. I hope you won, at least!"
             p "Yeah, me too."
             $ approve("stan", 2)
 
-        "You were fishing alone.":
-            p "I was fishing and stargazing when there was a strange noise and the sky went all red. That's the last thing I remember before waking up in the middle of the ocean."
+        "You were fishing not far from home.":
+            p "I was fishing and stargazing in the bay just when there was a strange noise, and the sky went all red. That's the last thing I remember before waking up in the middle of the ocean."
             show ford grin at right, hop
             f "Fascinating! I wonder if you encountered a temporary wormhole, or if perhaps you were abducted by aliens! You'll have to tell me everything!"
             f smile "Once you're quite recovered, naturally."
             s smile "No way, poindexter! Once our new guest recovers, we're doin' some DEEP SEA fishin'!"
             s grin "I even brought the Joke Book!"
             f eyesclosed "{i}*groans*{/i}"
-            $ approve("stan", 2)
             $ approve("ford", 2)
 
     show stan neutral
     show ford neutral
 
-    "It occurs to you that you've only got the clothes on your back at the moment, and lacking any form of identity, air travel is out of the question."
-    "Even if you did have enough in your bank account to pay for a trip home, you have nobody to call who'd be able to access it."
+    "It occurs to you that you've got nothing to your name other than the clothes on your back (or rather, in the laundry) at the moment. As you lack any form of identity, air travel is out of the question."
+    "On top of that, even if you did have enough in your bank account to pay for a trip home, you have nobody to call who'd be able to access it."
 
     p_think "What am I going to do now?" (show_act=_("thinking to yourself"))
 
@@ -219,7 +220,7 @@ label rescue:
 
     scene bg bunk at wake
 
-    "You wake up a few hours later, ravenous. You struggle weakly into the clothing that's been left for you and then call out."
+    "You wake up a few hours later, ravenous. Weak and shaky, you struggle into the clothing that's been left for you and then call out."
 
     p "Guys? Hellooo?"
 
@@ -227,19 +228,19 @@ label rescue:
     show ford smile at right
     with dissolve
 
-    "Ford responds to your calls, a warm smile softening his angular face when he sees you out of bed and dressed. He puts an arm around you and assists you to a small booth table in the cosy kitchen nearby."
+    "Ford responds to your calls, a warm smile softening his angular face when he sees you're dressed and out of bed. He puts an arm around your back and assists you to the dining table in the cosy galley adjacent to the bunkroom."
 
     show stan neutral at enter_left
 
     "Stan saunters over and drops a plate of hot food in front of you. You tear into it like a wolverine, barely able to register the conversation they're having over your lowered head."
 
-    ## [Illustration of a table full of hot dogs, rehydrated mashed potatoes,
-    ## Pitt Cola, and cans of brown meat]
+    ## [Galley booth: hotdogs, mashed potatoes with sour cream and chives,
+    ## three cans of Pitt Cola, and peas topped with butter]
     scene cg dinner at slow_push with dissolve
     pause 1.2
 
-    "Eventually, your shoveling slows and you slump into the corner of the booth. Ford insists that you drink more water, and once you've done so, Stan lifts your glutted body with a solid arm under your shoulders, ushering you back to what you now realize must be his own bunk."
-    "You've gathered that the twins have been taking turns sleeping in Ford's bunk. You smile up at Stan from under the blankets, meaning to thank him, but you drift off too quickly."
+    "Eventually, your shoveling slows and you slump into the corner of the booth, eyelids drooping. Ford insists that you drink more water, and once you've done so, Stan lifts your glutted body with a solid arm under your shoulders, ushering you back to what you now realize must be his own bunk."
+    "You've gathered that the twins have been taking turns sleeping in Ford's bunk. You smile up at Stan from under the blankets, intending to thank him, but sleep claims you before you get the chance."
 
     scene black with blackout
     pause 0.6
@@ -268,17 +269,20 @@ label rescue:
     menu:
 
         "Side with Stan.":
-            p "I {i}could{/i} work with that. Unfortunately I don't have any money. I'm pretty sure forgers want cash, and the airlines usually want paying as well." (show_act=_("you turn to Stan"))
+            p "I could work with that, but I don't have any money. I'm pretty sure forgers want cash, and the airlines usually want paying as well." (show_act=_("you turn to Stan"))
+            show stan sly
+            s sly "I've got a few ideas about how we could make some quick cash." (show_act=_("rubbing his hands together with a sly look"))
             show ford frown
             "Ford gives Stan a look."
-            s neutral "Ok kid. We won't leave you hangin', no matter what. We'll find a way to get you home."
+            s neutral "Alright alright, Sixer. Don't blow a gasket. Look, kid; we won't leave you hangin', no matter what. We'll find a way to get you home."
             p "Really?"
             s smile "You bet, kid."
+            show ford smile
             $ approve("stan", 1)
 
         "Side with Ford.":
             p "Could you actually do that? If you could get me home, that would be amazing!" (show_act=_("you turn to Ford"))
-            f neutral "Indubitably. We're on a planet-wide search for anomalous activity. I'm sure there must be something to research that brings us near to your home."
+            f smile "Indubitably. We're on a planet-wide search for anomalous activity. I'm sure there must be something close to your home that will be valuable to our research."
             $ approve("ford", 1)
             p "Phew, you don't know how relieved I am to hear you say that."
             f smile "We're happy to help, right Stanley?"
@@ -294,7 +298,7 @@ label rescue:
             f neutral "Then again, I'd really like the chance to run some tests on you and research your predicament on the off chance that the cause was anomalous."
             p "I, uhh... sure, ok. Yeah, that sounds fine I guess."
             s neutral "What do you think, Sixer? It'd be nice to have someone else to talk to for a while." (show_act=_("gives Ford a sidelong glance"))
-            f neutral "As long as they're aware of the dangers, I'm for it." (show_act=_("gives Stan a sidelong glance"))
+            f neutral "As long as [player_name] is aware of the dangers, I'm for it." (show_act=_("gives Stan a sidelong glance"))
             show stan grin at left, hop
             show ford grin at right, hop
             with quick
@@ -315,7 +319,7 @@ label arrive_at_reykjavik:
 
     scene bg street with slowfade
 
-    "The three of you wander through downtown Reykjavik, stocking up on supplies and gear. The guys generously purchase you an anorak and sundry other cold weather necessities, extra clothes and underthings, and a bathing suit."
+    "The three of you wander through downtown Reykjavik, stocking up on supplies and gear. The guys generously purchase you an anorak and sundry other cold weather necessities, along with extra clothes and underthings, and even a bathing suit."
     "They also purchase a hammock to hang from the Stan-O-War 3's beams to act as a makeshift bed."
 
     scene bg dock
@@ -323,18 +327,18 @@ label arrive_at_reykjavik:
     show ford neutral at right
     with dissolve
 
-    "After delivering these things to the boat, you all stand on the dock and debate what to do with the rest of the afternoon."
+    "After delivering these things to the boat, you all stand on the dock and debate what to do for the rest of the day."
 
     f smile "I'd love to visit the Whale Museum! I have long suspected that a narwhal horn specimen housed there is mislabeled."
     f grin "It's possible that the horn isn't that of a narwhal and may actually be evidence of an entirely unknown species!"
 
-    s frown "{i}*groan*{/i} Haven't we seen enough fish to last us a lifetime?"
+    s frown "{i}*groan*{/i} I'm sicka lookin' at fish."
 
     f frown "Whales aren't fish, Stanley."
 
     s frown "Dammit Sixer, that's not the point!"
 
-    s neutral "Y'know, Mabel said something about music clubs with hot tubs around here, we should look for one o' those!"
+    s excited "Y'know, Mabel said something about music clubs with hot tubs around here, we should look for one o' those!"
 
     f neutral "There is also a local film festival scheduled for tonight. A documentary filmmaker I'm familiar with through her work on the topic of Icelandic cryptids is showcasing a new film."
     f "Regrettably, I believe it to be a departure from her previous work; tonight's film seems to be a period drama set in turn of the century Iceland."
@@ -343,7 +347,7 @@ label arrive_at_reykjavik:
 
     s neutral "Tell ya what, if that's what the kid wants to do, we'll all go. If not, how 'bout we split up and [player_name] can tag along with whoever [p_subj] [p_wants]?"
 
-    f neutral "That sounds reasonable."
+    f smile "That sounds reasonable."
 
     s smile "Whaddaya say, [player_name]?"
 
@@ -352,11 +356,11 @@ label arrive_at_reykjavik:
         "Join Stan for soaking and sipping on the town.":
             p "Hot tubs, booze and tunes? You're singing my song, Stan! Let's do this!"
             show stan smile at left, hop
-            s smile "Yeah! Let's go get our swimsuits on and fancy ourselves up. We're paintin' the town whatever color you want tonight!"
+            s excited "Yeah! Let's go get our swimsuits on and fancy ourselves up. We're paintin' the town whatever color you want tonight!"
             f neutral "Just be careful, Stanley, and message me if anything happens. I'll meet you two back here later tonight."
             s smile "Sure thing, Ma. Have fun with the fish!"
             f frown "Whales are not fish!"
-            $ approve("stan", 1)
+            $ approve("stan", 2)
             jump stan_after_dark
 
         "Join Ford for an educating journey and a mystery to solve.":
@@ -365,9 +369,9 @@ label arrive_at_reykjavik:
             f uncomfortable "Um, yes... indeed. I'll just grab my bag and we'll be off."
             s smile "Uh oh, he's bringin' his Science Bag. You're in for it now."
             p "Is that bad?"
-            s grin "I'm outta here! Meet you guys back here tonight ok bye!"
+            s grin "I'm outta here! Meet you guys back here tonight ok byeeee!"
             hide stan with moveoutleft
-            $ approve("ford", 1)
+            $ approve("ford", 2)
             jump a_night_at_the_museum
 
         "Take them both to the Theater.":
@@ -465,7 +469,7 @@ label a_night_at_the_museum:
 
     p "Is this a bunion shaver?"
 
-    f blush "It was the most effective item I could find for this purpose. Are you in or not??"
+    f embarrassed "It was the most effective item I could find for this purpose. Are you in or not??"
 
     p "Of course! I'll head into the bathroom when I'm done."
 
@@ -485,7 +489,7 @@ label a_night_at_the_museum:
 
     p "Why couldn't you have run these tests on the boat?"
 
-    f neutral "I'll need to observe the oxidation of the newly-exposed particles as soon as possible. This should only take a few minutes. You can feel free to enjoy the museum while I run the tests, if you like."
+    f serious "I'll need to observe the oxidation of the newly-exposed particles as soon as possible. This should only take a few minutes. You can feel free to enjoy the museum while I run the tests, if you like."
 
     menu:
 
@@ -523,6 +527,7 @@ label a_night_at_the_museum:
             "Ford stows all of his instruments into his bag without hesitation and you're spun around as he hooks his arm with yours and exits the bathroom at speed. He marches you quickly to the exit as shouts ring out behind you."
             with vpunch
             f shocked "{b}RUN!{/b}"
+            $ approve("ford", 1)
 
         "I'm curious to see what you're testing the sample for, if that's ok.":
             f smile "Certainly! Here, add the contents of this vial to the sample while I calibrate the instruments."
@@ -585,9 +590,10 @@ label stan_after_dark:
     call chapter(_("Stan After Dark"), _("Soaking and sipping on the town"))
 
     scene bg pier night with slowfade
-    show stan grin at center with dissolve
+    show stan suit at center, dance with dissolve
 
     "Stan dances out of the Stan-O-War 3 in a white suit with a burgundy dress shirt, its top buttons open and displaying an almost worrying amount of chest hair."
+    show stan grin at center
     "He wraps his anorak around him before exchanging some cautionary words with Ford as they part ways."
     "Dressed as best you can in your own clothes, wearing your bathing suit underneath, you once again thank your lucky stars that of all the mariners that could've scooped you out of the ocean, it was these two generous, likeable dudes."
 

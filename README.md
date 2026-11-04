@@ -1,6 +1,6 @@
 # Sea's Company
 
-A non-commercial Gravity Falls fan visual novel adapted from `Sea's Company (Structured).docx`. The game uses Ren'Py 8.5.3 at a virtual resolution of 1920 × 1080.
+A non-commercial Gravity Falls fan visual novel adapted from `Sea's Company (Structured)(1).docx`. The game uses Ren'Py 8.5.3 at a virtual resolution of 1920 × 1080.
 
 ## Run the game
 
@@ -28,12 +28,14 @@ The adaptation preserves the document's dialogue, choices, alternate speaker nam
 
 Presentation additions include chapter cards labeled “Timeline,” a Journal screen, speaker-focus dimming, a trust summary and route-dependent closing line, and an Atbash cipher on the title and ending screens. Obvious source typos were corrected, including a Stan line mislabeled as Ford and “Play” in place of “Player.”
 
-Empty inputs use “Pat,” “nowhere in particular,” and “they/them.” Standard and custom subject/object pronoun pairs are supported. The Patron wears a towel rather than a speedo; the generated art contains no nudity.
+Empty inputs use “Pat,” “nowhere in particular,” and “they/them.” Standard and custom subject/object pronoun pairs are supported. The 2026-11-03 revision adds the opening joke branch, removes the prototype-watercraft backstory, updates dialogue and approval points, and revises the dinner illustration. Stan wears a white suit for his animated evening entrance. Source expression names reuse matching existing expressions; his sly hand-rubbing is also described in the action bubble.
+
+The Patron wears a towel rather than a speedo; the generated art contains no nudity.
 
 ## Asset sources
 
 - Story: the supplied Word document; `dev/sc.md` retains its comments with anonymized author metadata. The original Word files stay local and are ignored by Git.
-- Character sprites, backgrounds, dinner illustration, and base UI textures: generated for this adaptation using `gpt-image-2.5` through the local CLIProxyAPI service. Prompts and source images are preserved in `dev/`. These are not official production assets.
+- Character sprites, backgrounds, dinner illustration, and base UI textures: generated for this adaptation using `gpt-image-2.5` through the local CLIProxyAPI service. Prompts and source images are preserved in `dev/`. The revised dinner and white-suit sprite were edited with the built-in image generation tool; their prompts are in `dev/revision-art.json`. These are not official production assets.
 - UI panels, buttons, meters, and final image crops: `dev/build_assets.py`, using Pillow.
 - [Crimson Text](https://fonts.google.com/specimen/Crimson+Text), [IM FELL English SC](https://fonts.google.com/specimen/IM+Fell+English+SC), and [Pirata One](https://fonts.google.com/specimen/Pirata+One): Google Fonts, under the SIL Open Font License. Their notices are included in `game/fonts/`.
 - Engine: [Ren'Py](https://www.renpy.org/), under its bundled licenses.
