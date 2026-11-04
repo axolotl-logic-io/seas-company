@@ -163,12 +163,19 @@ define lizard = Character("Lizard Head", image="lizard", callback=speaker("lizar
 
 init python:
     for _n in ("neutral", "smile", "grin", "frown", "blush", "uncomfortable",
-               "laugh", "embarrassed", "anxious", "grimace"):
+               "laugh", "embarrassed", "anxious", "grimace", "suit"):
         renpy.image(("stan", _n), At("images/sprites/stan_%s.png" % _n, focus("stan")))
 
     for _n in ("neutral", "smile", "grin", "frown", "blush", "uncomfortable",
                "shocked", "eyesclosed", "finger"):
         renpy.image(("ford", _n), At("images/sprites/ford_%s.png" % _n, focus("ford")))
+
+    renpy.image(("stan", "sly"), At("images/sprites/stan_grin.png", focus("stan")))
+
+    # Source expression names mapped to the existing matching artwork.
+    renpy.image(("stan", "excited"), At("images/sprites/stan_grin.png", focus("stan")))
+    renpy.image(("ford", "embarrassed"), At("images/sprites/ford_blush.png", focus("ford")))
+    renpy.image(("ford", "serious"), At("images/sprites/ford_frown.png", focus("ford")))
 
 image patron = At("images/sprites/patron.png", focus("patron"))
 image lizard = At("images/sprites/lizard.png", focus("lizard"))
@@ -260,6 +267,13 @@ transform slow_push:
 transform hop:
     easein 0.12 yoffset -24
     easeout 0.12 yoffset 0
+
+transform dance:
+    subpixel True
+    easein 0.18 yoffset -12 xoffset -12
+    ease 0.25 yoffset 0 xoffset 12
+    ease 0.25 yoffset -8 xoffset -8
+    easeout 0.2 yoffset 0 xoffset 0
 
 define quick = Dissolve(0.25)
 define slowfade = Fade(1.0, 0.6, 1.2)

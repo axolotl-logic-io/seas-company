@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-03",
+  "assets": [
+    {
+      "source": "dev/bg/dinner.png",
+      "runtime": "game/images/bg/cg dinner.jpg",
+      "prompt": "Edit the existing dinner illustration preserving wide framing, cozy boat galley booth, warm sunset lighting and cartoon illustrated style. Include a platter of hotdogs, mashed potatoes covered with sour cream and chopped green chives, exactly three cans labeled Pitt Cola, and a bowl of peas topped with pats of butter. Remove canned meat and the fourth cola can. No people."
+    },
+    {
+      "source": "dev/spr/stan_suit.png",
+      "runtime": "game/images/sprites/stan_suit.png",
+      "prompt": "Edit the existing transparent Stan Pines sprite. Preserve character identity, red beanie, glasses, grey hair, stubble, proportions, framing and cartoon linework. Replace anorak, undershirt, belt and trousers with a white suit and burgundy dress shirt, top buttons open displaying chest hair. Confident grin, playful dancing pose with bent arms. Head-to-mid-thigh framing. Transparent background, no text."
+    }
+  ],
+  "limitations": [
+    "Two attempts to generate a sly hand-rubbing pose were rejected by the image tool. Existing grin artwork and an action bubble represent this gesture.",
+    "An attempt to remove the generated suit sprite halo was rejected; the accepted transparent original is used."
+  ],
+  "expression_aliases": {
+    "stan excited": "stan_grin.png",
+    "stan sly": "stan_grin.png plus action bubble",
+    "ford embarrassed": "ford_blush.png",
+    "ford serious": "ford_frown.png"
+  }
+}

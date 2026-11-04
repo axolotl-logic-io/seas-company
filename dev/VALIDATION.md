@@ -1,3 +1,23 @@
+# Document revision validation (2026-11-03)
+
+Updated against `Sea's Company (Structured)(1).docx`, comparing paragraph text directly with the previous Word source. The anonymized source mirror in `sc.md` reflects the new document.
+
+Ren'Py 8.5.3 lint passes: 326 dialogue blocks, 6,174 words, 12 menus. All three Python helper tests pass. Three automated routes reach the ending and verify save/load restoration in isolated save directories:
+
+| Route | Ending Stan / Ford trust | Evidence |
+| --- | --- | --- |
+| Stan | 15 / 2 | `validation/revision-route0/complete.json` |
+| Ford | 0 / 13 | `validation/revision-route1/complete.json` |
+| Film festival | 1 / 6 | `validation/revision-route2/complete.json` |
+
+These runs cover both opening-joke responses, both remaining backstories, all three evening routes, and the added museum lookout approval. They do not cover every combination of choices. Screenshots and save verification remain in the corresponding validation directories.
+
+Revised dinner artwork and Stan's white-suit sprite use the built-in image tool. Prompt descriptions, paths, expression aliases, and generation limitations are recorded in `revision-art.json`. The sly hand-rubbing pose uses existing grin art and an action bubble after two image-tool rejections. The suit sprite leaves extra headroom for its entrance sway and bounce; its source and build scaling are preserved.
+
+Mac and web distributions rebuilt from the revised source. The local Mac app is refreshed from the new archive. Production hosting is unchanged.
+
+---
+
 # Validation results
 
 Validated on 2026-10-27 on macOS with Ren'Py 8.5.3.26051504.

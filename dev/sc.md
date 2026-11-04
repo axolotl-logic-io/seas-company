@@ -4,38 +4,42 @@
 
 [Clears the screen, display \"bg raft.png\" (following the convention of
 a tag followed by attributes, see  documentation)]{.comment-start id="0"
-author="Anonymous"}Scene bg
+author="Anonymous" date="2024-02-05T21:56:48Z"}Scene bg
 raft[]{.comment-end id="0"}
 
 [\"Narr\" is short for narrator.]{.comment-start id="1"
-author="Anonymous"}**Narr**[]{.comment-end
+author="Anonymous" date="2024-03-04T02:44:43Z"}**Narr**[]{.comment-end
 id="1"}**:** *Nothing but dark water as far as the eye can see. The sun
 beats mercilessly upon your dehydrated body, sprawled as it is across a
-flotilla of plastic garbage and styrofoam chunks. You've long since lost
-the ability to raise your head to scan the horizon for rescue. You pull
-your hat down further over your face, resigned to your fate.*
+small flotilla of plastic garbage and styrofoam chunks. You've long
+since lost the ability to raise your head to scan the horizon for
+rescue. You pull your hat down further over your face, resigned to your
+fate.*
 
 [The \"Character\" \"Narr\" will show the narrator dialog
-box.]{.comment-start id="2" author="Anonymous"}**Narr**[]{.comment-end id="2"}**:** *Your
-small raft is jostled by waves. Vaguely, you register a roaring motor
-assaulting your ears but after days of silence you assume it's your own
-parched brain screaming at itself. You lack the energy to care. Your
-every nerve and sinew ache with dusty, creaking pain.*
+box.]{.comment-start id="2" author="Anonymous"
+date="2024-03-04T02:34:15Z"}**Narr**[]{.comment-end id="2"}**:** *Your
+small collection of lashed-together garbage is jostled by waves.
+Vaguely, you register a roaring motor assaulting your ears but after
+days of silence you assume it's your own parched brain screaming at
+itself. You lack the energy to care. Your every nerve and sinew ache
+with dusty, creaking pain.*
 
 **Stan** [Displays an alternate name]{.comment-start id="3"
-author="Anonymous"}[Whatever is in
+author="Anonymous" date="2024-02-07T00:08:48Z"}[Whatever is in
 parenthesis will be the name displayed instead of the character\'s
 default name. Because this is code, it is important to us to know this
 is Stan speaking, even if the player doesn\'t know it
-yet.]{.comment-start id="4" author="Anonymous"}**(A Voice)**[[]{.comment-end
+yet.]{.comment-start id="4" author="Anonymous"
+date="2024-03-04T02:45:19Z"}**(A Voice)**[[]{.comment-end
 id="4"}]{.comment-end id="3"}**:** Whoa, there's a body on this thing!
 Sixer, reverse engines!
 
 **Stan (A Voice):** Hey! You alive down there?
 
 ***Narr:** You don't know if this is just another hallucination, but the
-smell of exhaust smoke ignites something inside you and you do your best
-to raise your arm in a limp wave.*
+smell of exhaust smoke reignites something inside you and you do your
+best to raise your arm in a limp wave.*
 
 **Stan (A Voice):** They're alive! Sixer, full stop!
 
@@ -46,12 +50,12 @@ Scene bg bunk
 
 ***Narr:*** *You flounder toward consciousness with a vague, fever-dream
 recollection of someone holding a cup to your lips as you drank water,
-and then later on some kind of rich broth. You reach out weakly and
+and a while later, some kind of rich broth. Reaching out weakly, you
 encounter only soft blankets. You can still feel the gentle roll of the
 ocean.*
 
-***Narr:**When your eyes open, you find yourself alone in a
-claustrophobic, closet sized room. You can hear the lapping of waves,
+***Narr:** When your eyes open, you find yourself alone in a
+claustrophobic, closet sized bedroom. You can hear the lapping of waves,
 the deep hum of a motor, and the murmur of a conversation somewhere
 outside. One of the voices raises a bit and you can just make out a word
 "*\... Reykjavik!" *before it recedes into the ambient soundscape.*
@@ -80,17 +84,18 @@ grateful, if still a little unnerved by the thought of someone poking
 you with needles while you were unconscious.*
 
 [Displays a menu to the player]{.comment-start id="5"
-author="Anonymous"}**Branch:**
+author="Anonymous" date="2024-02-07T00:16:26Z"}**Branch:**
 []{.comment-end id="5"}
 
 - [This is the text of an item they can click]{.comment-start id="6"
-  author="Anonymous"}[The fact that it is
+  author="Anonymous" date="2024-02-07T00:16:37Z"}[The fact that it is
   in parenthesis here has no special meaning.]{.comment-start id="7"
-  author="Anonymous"}**(Call out)**
+  author="Anonymous" date="2024-03-04T02:34:42Z"}**(Call out)**
   [[]{.comment-end id="7"}]{.comment-end id="6"}
 
   - [All lines this level of indent in are run after the item is
-    clicked.]{.comment-start id="8" author="Anonymous"}**Player:** Um...hello?
+    clicked.]{.comment-start id="8" author="Anonymous"
+    date="2024-02-07T00:16:59Z"}**Player:** Um...hello?
 
   - ***Narr:** Your voice is rough with dehydration and lack of use, but
     the distant murmuring stops and you can hear approaching
@@ -108,7 +113,8 @@ author="Anonymous"}**Branch:**
 
   - r[Repeat the menu, but eliminate the menu item that was just chosen.
     i.e. Voice your concerns will not be displayed
-    again.]{.comment-start id="9" author="Anonymous"}epeat branch[]{.comment-end id="9"}
+    again.]{.comment-start id="9" author="Anonymous"
+    date="2024-03-04T02:39:48Z"}epeat branch[]{.comment-end id="9"}
 
 - **(Get up)**
 
@@ -124,12 +130,14 @@ author="Anonymous"}**Branch:**
 
   - r[Repeat the menu, but eliminate the menu item that was just chosen.
     i.e. Voice your concerns will not be displayed
-    again.]{.comment-start id="10" author="Anonymous"}epeat branch[]{.comment-end id="10"}
+    again.]{.comment-start id="10" author="Anonymous"
+    date="2024-03-04T02:39:48Z"}epeat branch[]{.comment-end id="10"}
 
-[Instantaneous]{.comment-start id="11" author="Anonymous"}Show stan neutral[]{.comment-end id="11"}
+[Instantaneous]{.comment-start id="11" author="Anonymous"
+date="2024-02-07T00:56:47Z"}Show stan neutral[]{.comment-end id="11"}
 [\"at left\" means show the image on the left. Default location is
 center. We can add transitions later.]{.comment-start id="12"
-author="Anonymous"}at left[]{.comment-end
+author="Anonymous" date="2024-03-04T02:36:47Z"}at left[]{.comment-end
 id="12"}
 
 Show ford neutral at right
@@ -146,12 +154,37 @@ expressions of concern on their square-jawed faces.*
 
 Show Stan smile at left
 
-***Narr:** Beanie Guy chuckles to himself as Cleft Chin guy shines a
+**Branch:**
+
+- **Bust out in laughter, hurting your dry throat.**
+
+  - **Player:** Oh for Pete's sake, I can't believe I've become a meme!
+
+  - Show Stan laugh sassy
+
+  - **Stan (Beanie Guy) grin:** See, Sixer! EVERYBODY knows that joke!
+
+  - \$stan_approval += 2
+
+- **Blink at the man.**
+
+  - **Player:** Uhh...okay.
+
+  - Show Stan embarrassed.
+
+  - **Ford (Cleft Chin) grin:** I told you that joke would be in bad
+    taste, Stanley.
+
+  - \$ford_approval += 2
+
+***Narr:** Beanie Guy rocks on the balls of his feet, gracefully
+remaining still as the deck tilts to and fro. Cleft Chin guy shines a
 small pen-light into your eyes and grasps your wrist for a moment,
-taking your pulse before noticing the empty cup by the bedside.*
+taking your pulse before noticing the empty bottle by the bedside.*
 
 **Ford (Cleft Chin):** Ah, you found the water, good. You were abysmally
-dehydrated. I highly doubt you would've made it another day out there.
+dehydrated. I highly doubt you would've made it another day out there if
+we hadn't spotted you.
 
 **Narr:** *His tone and posture give you the nagging feeling that your
 predicament was somehow your own fault. You wonder if that's true.*
@@ -164,16 +197,18 @@ tied to in-story interactions or dialogue. We are splitting out into
 different realities based on a menu selection then, as a matter of
 convenience, returning unless we explicitly jump somewhere else. You can
 do anything in these branches and the options can be anything, not just
-responses to questions.]{.comment-start id="13" author="Anonymous"}**Branch**[]{.comment-end id="13"}**:**
+responses to questions.]{.comment-start id="13" author="Anonymous"
+date="2024-03-04T03:03:30Z"}**Branch**[]{.comment-end id="13"}**:**
 
 - **Thank them**
 
-  - **Player:** I thought so, too. I owe you my life. Thank you for...
+  - **Player:** It certainly felt that way. *You take a deep breath.* I
+    owe you my life. Thank you for...
 
   - **Player:** *you gesture weakly to your pitiful body and its
     surroundings*
 
-  - **Player:** ...all this.
+  - **Player:** all the everything. *You give them a wan smile.*
 
   - ***Narr:** Both men blush and smile.*
 
@@ -181,16 +216,17 @@ responses to questions.]{.comment-start id="13" author="Anonymous"}**Branch**[]{
 
   - Show Ford smile uncomfortable
 
-  - **Stan (Beanie Guy):** Hey, no problem. I'm just glad we got to you
-    in time.
+  - **Stan (Beanie Guy):** Hey, no problem. We're just glad we got to
+    you in time.
 
   - [Update the stan_approval variable by incrementing it by 2. Note the
-    \"+=\".]{.comment-start id="14" author="Anonymous"}\$stan_approval += 2[]{.comment-end
+    \"+=\".]{.comment-start id="14" author="Anonymous"
+    date="2024-03-04T02:48:23Z"}\$stan_approval += 2[]{.comment-end
     id="14"}
 
   - \$ford_approval += 2
 
-- **Voice your concerns.**
+- **Voice your concerns**
 
   - **Player:** What's the eye exam for, and did you *undress me*?
 
@@ -217,15 +253,7 @@ responses to questions.]{.comment-start id="13" author="Anonymous"}**Branch**[]{
 
   - **Player:** Okay, fine, that probably makes sense.
 
-- **Bust out in laughter, hurting your dry throat.**
-
-  - **Player:** Oh for cripes sake, I can't believe I've become a meme!
-
-  - Show Stan laugh sassy
-
-  - **Stan (Beanie Guy) grin:** See, Sixer! EVERYBODY knows that joke!
-
-  - \$stan_approval += 2
+  - \$ford_approval += 1
 
 **Narr*:*** *Cleft Chin picks up a bundle from a nearby shelf and leans
 toward you.*
@@ -238,13 +266,13 @@ the side of the bed before straightening and folding his arms behind his
 back.*
 
 **Stan (Beanie Guy) smile:** Oh yeah, by the way, I'm Stan and this nerd
-is my brother Ford. Welcome aboard the Stan-O-War 3! What's yer name and
+is my brother Ford. Welcome aboard the Stan o'War 3! What's yer name and
 where're ya from, anyway?
 
 [Display a prompt that says \"What\'s yer name?\" and allows text based
 input from the user. Assign the value to \$player which you can then
 refer to in text by writing \$player.]{.comment-start id="15"
-author="Anonymous"}\$player = input What\'s
+author="Anonymous" date="2024-03-04T02:49:21Z"}\$player = input What\'s
 yer name?[]{.comment-end id="15"}
 
 \$location = input Where\'re ya from?
@@ -256,40 +284,24 @@ middle of the Atlantic?
 
 **Branch:**
 
-- **You were testing out a prototype watercraft.**
-
-  - **Player:** Well, I was testing out a prototype submersible
-    watercraft when the craft's Artificial Intelligence decided it
-    wanted to explore the ocean on its own. It went rogue, ejecting me
-    from the cockpit before diving out of sight.
-
-  - [create \'eyes closed\' and pose \'raised finger\' for
-    Ford]{.comment-start id="16" author="Anonymous"}**Ford grin:** Ha! I would expect as
-    much! I've never met an artificial intelligence that had an ounce of
-    loyalty. Still, I'd love to hear more! That is fascinating work! I'm
-    glad we happened along before you succumbed to the elements.
-    []{.comment-end id="16"}
-
-  - \$ford_approval += 2
-
 - **You tumbled off a cruise ship while drunk**
 
   - **Player:** Well, last I remember, I was in a drinking contest with
     a circus contortionist on a cruise ship.
 
-  - **Stan smile:** Sweet Moses! You fell off a cruiseliner? Those
-    things are huge! That drop had to be a doozy. I hope you won, at
-    least!
+  - **Stan smile:** Hot Belgian Waffles, you fell off a cruiseliner?
+    Those things are huge! That drop had to be a doozy. I hope you won,
+    at least!
 
   - **Player:** Yeah, me too.
 
   - \$stan_approval += 2
 
-- **You were fishing alone**
+- **You were fishing not far from home**
 
-  - **Player:** I was fishing and stargazing when there was a strange
-    noise and the sky went all red. That's the last thing I remember
-    before waking up in the middle of the ocean.
+  - **Player:** I was fishing and stargazing in the bay just when there
+    was a strange noise, and the sky went all red. That's the last thing
+    I remember before waking up in the middle of the ocean.
 
   - **Ford grin:** Fascinating! I wonder if you encountered a temporary
     wormhole, or if perhaps you were abducted by aliens! You'll have to
@@ -304,19 +316,17 @@ middle of the Atlantic?
 
   - **Ford Eyes Closed Grimace: \[Ford Groans\]**
 
-  - [Add 2 points to stan_approval. (Notice the +=, what do you think
-    happens with -=)]{.comment-start id="17" author="Anonymous"}\$stan_approval += 2[]{.comment-end
-    id="17"}
-
   - \$ford_approval += 2
 
-**Narr:** *It occurs to you that you've only got the clothes on your
-back at the moment, and lacking any form of identity, air travel is out
-of the question. Even if you did have enough in your bank account to pay
-for a trip home, you have nobody to call who'd be able to access it.*
+**Narr:** *It occurs to you that you've got nothing to your name other
+than the clothes on your back (or rather, in the laundry) at the moment.
+As you lack any form of identity, air travel is out of the question. On
+top of that, even if you did have enough in your bank account to pay for
+a trip home, you have nobody to call who'd be able to access it.*
 
-**Player {**[\"action bubble\" as you called it.]{.comment-start id="18"
-author="Anonymous"}**internal**[]{.comment-end id="18"}**}**:
+**Player {**[\"action bubble\" as you called it.]{.comment-start id="16"
+author="Anonymous"
+date="2024-03-04T02:45:47Z"}**internal**[]{.comment-end id="16"}**}**:
 *What am I going to do now?*
 
 ***Narr:** Your head spins and you flop back down on the bunk with a
@@ -330,15 +340,15 @@ hours for dinner, and then we can discuss our next move.
 **Narr:** *You'd thank them again if you had the energy, but you're
 already drifting toward unconsciousness.*
 
-***Narr:** You wake up a few hours later, ravenous. You struggle weakly
-into the clothing that's been left for you and then call out.*
+***Narr:** You wake up a few hours later, ravenous. Weak and shaky, you
+struggle into the clothing that's been left for you and then call out.*
 
 **Player:** Guys? Hellooo?
 
 ***Narr:** Ford responds to your calls, a warm smile softening his
-angular face when he sees you out of bed and dressed. He puts an arm
-around you and assists you to a small booth table in the cosy kitchen
-nearby.*
+angular face when he sees you're dressed and out of bed. He puts an arm
+around your back and assists you to the dining table in the cosy galley
+adjacent to the bunkroom.*
 
 ***Narr:** Stan saunters over and drops a plate of hot food in front of
 you. You tear into it like a wolverine, barely able to register the
@@ -349,17 +359,19 @@ game, they are a note to ourselves or each other. They\'re useful in
 this case because you may have a background image with a much shorter
 name to display here and want a reminder of what it actually is or you
 want such an image and don\'t have it yet to show.]{.comment-start
-id="19" author="Anonymous"}\[Illustrations
-of table full of hotdogs, rehydrated mashed potatoes, pitt cola, and
-cans of brown meat\][]{.comment-end id="19"}
+id="17" author="Anonymous" date="2024-03-04T02:43:54Z"}\[Close up of
+the galley booth, with a platter full of hotdogs, a big bowl of mashed
+potatoes covered with sour cream and chives, three cans of Pitt Cola and
+a bowl of peas with pats of butter on top\][]{.comment-end id="17"}
 
 ***Narr:** Eventually, your shoveling slows and you slump into the
-corner of the booth. Ford insists that you drink more water, and once
-you've done so, Stan lifts your glutted body with a solid arm under your
-shoulders, ushering you back to what you now realize must be his own
-bunk. You've gathered that the twins have been taking turns sleeping in
-Ford's bunk. You smile up at Stan from under the blankets, meaning to
-thank him, but you drift off too quickly.*
+corner of the booth, eyelids drooping. Ford insists that you drink more
+water, and once you've done so, Stan lifts your glutted body with a
+solid arm under your shoulders, ushering you back to what you now
+realize must be his own bunk. You've gathered that the twins have been
+taking turns sleeping in Ford's bunk. You smile up at Stan from under
+the blankets, intending to thank him, but sleep claims you before you
+get the chance.*
 
 ***Narr:** Awakened by a sudden jarring of the boat, you hear directions
 shouted from the deck down to what must be a dock as the Stan-O-War 3
@@ -381,7 +393,8 @@ probably find somebody that can help...
 fills the doorway.*
 
 [Show an image of ford frowning, specifically renders \"ford
-frown.png\"]{.comment-start id="20" author="Anonymous"}Show ford frown[]{.comment-end id="20"}
+frown.png\"]{.comment-start id="18" author="Anonymous"
+date="2024-02-07T00:10:27Z"}Show ford frown[]{.comment-end id="18"}
 
 **Ford:** No, Stanley! \$Player is a resident of \$Home and we will see
 \$pronoun returned home WITHOUT putting \$pronoun in danger of
@@ -393,21 +406,29 @@ incarceration.
 
   - **Player** [Curly braces specify what should go in the \"action
     bubble\" we dreamed of having in the dialogue box]{.comment-start
-    id="21" author="Anonymous"}**{you turn
-    to Stan}**[]{.comment-end id="21"}**:** I *could* work with that.
-    Unfortunately I don't have any money. I'm pretty sure forgers want
-    cash, and the airlines usually want paying as well.
+    id="19" author="Anonymous" date="2024-03-04T02:47:26Z"}**{you turn
+    to Stan}**[]{.comment-end id="19"}**:** I *could* work with that,
+    but I don't have any money. I'm pretty sure forgers want cash, and
+    the airlines usually want paying as well.
 
-  - Show Ford frown
+  - Show Stan with a sly look on his face, rubbing his hands together.
+
+  - **Stan Sly:** I've got a few ideas about how we could make some
+    quick cash.
+
+  - Show Ford frown with arms crossed
 
   - **Narr:** Ford gives Stan a look
 
-  - **Stan neutral:** Ok kid. We won't leave you hangin', no matter
-    what. We'll find a way to get you home.
+  - **Stan neutral:** Alright alright, Sixer. Don't blow a gasket. Look,
+    kid; we won't leave you hangin', no matter what. We'll find a way to
+    get you home.
 
   - **Player:** Really?
 
   - **Stan smile:** You bet, kid.
+
+  - Show Ford smile
 
   - \$stan_approval += 1
 
@@ -416,9 +437,9 @@ incarceration.
   - **Player {You turn to Ford}:** Could you actually do that? If you
     could get me home, that would be amazing!
 
-  - **Ford neutral:** Indubitably. We're on a planet-wide search for
-    anomalous activity. I'm sure there must be something to research
-    that brings us near to your home.
+  - **Ford Smile:** Indubitably. We're on a planet-wide search for
+    anomalous activity. I'm sure there must be something close to your
+    home that will be valuable to our research.
 
   - \$ford_approval += 1
 
@@ -427,7 +448,9 @@ incarceration.
 
   - **Ford:** We're happy to help, right Stanley?
 
-  - **Stan:** You bet, kid. \*Smile\*
+  - *Show Stan smile*
+
+  - **Stan:** You bet, kid.
 
 - **A weird, third option.**
 
@@ -457,8 +480,8 @@ incarceration.
   - **Stan neutral {Gives Ford a sidelong glance}:** What do you think,
     Sixer? It'd be nice to have someone else to talk to for a while.
 
-  - **Ford neutral {Gives Ford a sidelong glance}:** As long as they're
-    aware of the dangers, I'm for it.
+  - **Ford neutral {Gives Ford a sidelong glance}:** As long as \$player
+    is aware of the dangers, I'm for it.
 
   - Show stan grin
 
@@ -472,25 +495,24 @@ Jump Arrive at Reykjavik
 
 ***Narr:** The three of you wander through downtown Reykjavik, stocking
 up on supplies and gear. The guys generously purchase you an anorak and
-sundry other cold weather necessities, extra clothes and underthings,
-and a bathing suit. They also purchase a hammock to hang from the
-Stan-O-War 3's beams to act as a makeshift bed. After delivering these
-things to the boat, you all stand on the dock and debate what to do with
-the rest of the afternoon.*
+sundry other cold weather necessities, along with extra clothes and
+underthings, and even a bathing suit. They also purchase a hammock to
+hang from the Stan-O-War 3's beams to act as a makeshift bed. After
+delivering these things to the boat, you all stand on the dock and
+debate what to do for the rest of the day.*
 
 **Ford smile:** I'd love to visit the Whale Museum! I have long
 suspected that a narwhal horn specimen housed there is mislabeled. It's
 possible that the horn isn't that of a narwhal and may actually be
 evidence of an entirely unknown species!
 
-**Stan frown:** *groan* Haven't we seen enough fish to last us a
-lifetime?
+**Stan frown:** *groan* I'm sicka lookin' at fish.
 
 **Ford frown:** Whales aren't fish, Stanley.
 
 **Stan frown:** Dammit Sixer, that's not the point!
 
-**Stan neutral**: Y'know, Mabel said something about music clubs with
+**Stan excited**: Y'know, Mabel said something about music clubs with
 hot tubs around here, we should look for one o' those!
 
 **Ford neutral:** There is also a local film festival scheduled for
@@ -505,7 +527,7 @@ seems to be a period drama set in turn of the century Iceland.
 we'll all go. If not, how 'bout we split up and \$Player can tag along
 with whoever \$pronoun wants?
 
-**Ford neutral:** That sounds reasonable.
+**Ford smile:** That sounds reasonable.
 
 **Stan smile:** Whaddaya say, \$Player?
 
@@ -516,7 +538,7 @@ with whoever \$pronoun wants?
   - [**Player:** Hot tubs, booze and tunes? You're singing my song,
     Stan! Let's do this!]{.mark}
 
-  - [**Stan smile:** Yeah! Let's go get our swimsuits on and fancy
+  - [**Stan excited:** Yeah! Let's go get our swimsuits on and fancy
     ourselves up. We're paintin' the town whatever color you want
     tonight!]{.mark}
 
@@ -527,7 +549,7 @@ with whoever \$pronoun wants?
 
   - [**Ford frown:** Whales are not fish!]{.mark}
 
-  - \$stan_approval += 1
+  - \$stan_approval += 2
 
   - Jump Stan After Dark
 
@@ -548,9 +570,9 @@ with whoever \$pronoun wants?
   - [**Player:** Is that bad?]{.mark}
 
   - [**Stan smile:** I'm outta here! Meet you guys back here tonight ok
-    bye!]{.mark}
+    byeeee!]{.mark}
 
-  - \$ford_approval += 1
+  - \$ford_approval += 2
 
   - Jump A Night at the Museum
 
@@ -697,8 +719,8 @@ repeatedly until a viable sample is collected.
 
 **Player:** Is this a bunion shaver?
 
-**Ford blush:** It was the most effective item I could find for this
-purpose. Are you in or not??
+**Ford embarrassed:** It was the most effective item I could find for
+this purpose. Are you in or not??
 
 **Player:** Of course! I'll head into the bathroom when I'm done.
 
@@ -719,7 +741,7 @@ shavings into it.*
 
 **Player:** Why couldn't you have run these tests on the boat?
 
-**Ford neutral:** I'll need to observe the oxidation of the
+**Ford serious:** I'll need to observe the oxidation of the
 newly-exposed particles as soon as possible. This should only take a few
 minutes. You can feel free to enjoy the museum while I run the tests, if
 you like.
@@ -776,6 +798,8 @@ you like.
     shouts ring out behind you.
 
   - **Ford: RUN!**
+
+  - \$ford_approval += 1
 
 - **I'm curious to see what you're testing the sample for, if that's
   ok.**
@@ -843,6 +867,10 @@ Stan-o-War III.*
 Jump Outro
 
 ## Stan After Dark
+
+**Show** *Stan dances out of the Stan-o-War 3 in a white suit with a
+burgundy dress shirt, its top buttons open and displaying an almost
+worrying amount of chest hair*
 
 **Narr:** *Stan dances out of the Stan-o-War 3 in a white suit with a
 burgundy dress shirt, its top buttons open and displaying an almost
