@@ -1,0 +1,781 @@
+{
+  "issue": "https://github.com/axolotl-logic-io/seas-company/issues/6",
+  "method": "Fresh text-to-image generation from dialogue/narration; NO reference images, including style references.",
+  "style": "Sparse, low-detail painted backgrounds; style expressed entirely in words.",
+  "sprites": "Existing files remain unchanged.",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "raft",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: In the North Atlantic, a dehydrated castaway lies on a small flotilla of lashed-together plastic garbage and styrofoam. Nothing but dark water extends to the horizon; harsh sun bears down. Use the low reclining eye level of someone too weak to raise their head, a small edge of the improvised plastic-and-foam support near the bottom, and a vast unbroken water horizon. Bleak, exposed and lonely. Suggest restless waves with a handful of broad strokes, not glittering wavelets. The hat is on the unseen player's head, so do not place a hat on the raft. No visible body, hands, rescuers, rescue boat, land or icebergs.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 25,
+          "text": "\"Nothing but dark water as far as the eye can see. The sun beats mercilessly upon your dehydrated body, sprawled as it is across a small flotilla of plastic garbage and styrofoam chunks.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 25,
+          "text": "\"Nothing but dark water as far as the eye can see. The sun beats mercilessly upon your dehydrated body, sprawled as it is across a small flotilla of plastic garbage and styrofoam chunks.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 26,
+          "text": "\"You've long since lost the ability to raise your head to scan the horizon for rescue. You pull your hat down further over your face, resigned to your fate.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 26,
+          "text": "\"You've long since lost the ability to raise your head to scan the horizon for rescue. You pull your hat down further over your face, resigned to your fate.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 28,
+          "text": "\"Your small collection of lashed-together garbage is jostled by waves. Vaguely, you register a roaring motor assaulting your ears, but after days of silence you assume it's your own parched brain screaming at itself.\""
+        }
+      ],
+      "inferences": [
+        "Reclining viewpoint follows the player being unable to raise their head; no visible player body is needed."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/raft.png",
+      "runtime": "game/images/bg/bg raft.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-ec9d4842-e1aa-4e24-98d4-bad6f68e1533.png"
+    },
+    {
+      "id": "bunk",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: The guest wakes in Stan's claustrophobic, closet-sized bunkroom aboard the still-moving motorboat. A narrow single bunk fills nearly the entire room; the opposite wall is close enough to touch by leaning out. Compose from the pillow end at a low waking viewpoint, with soft rumpled blankets at the bottom and a narrow doorway at the side for the twins to enter. Within easy reach: a small water bottle. Above the bed: a used saline bag with loose IV tubing, connected to nobody. On the close wall: several simple photos and childlike drawings, predominantly a smiling auburn-haired boy and girl. Dirty laundry and old slippers occupy the narrow floor strip. A dog-eared romance paperback rests at a corner of the bunk; folded spare clothes sit on a small ledge. Soft utilitarian cabin light and a little indirect daylight through the doorway. Keep all these props legible as simple shapes. Do not turn this into a spacious bedroom, luxurious double bed or panoramic seaview cabin.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 50,
+          "text": "\"When your eyes open, you find yourself alone in a claustrophobic, closet-sized bedroom. You can hear the lapping of waves, the deep hum of a motor, and the murmur of a conversation somewhere outside.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 55,
+          "text": "\"You raise your head slowly and grit your teeth until it stops spinning. Your roaming eyes catch sight of a small bottle of water within reach. Grabbing it, you gulp it greedily, water spilling over your bare chest.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 62,
+          "text": "\"Hanging from above is what looks like a bag of saline and the cords of an IV, and when you scan your arms you note a small bandage in the crook of your right elbow, indicating that you were previously administered intravenous fluids.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 75,
+          "text": "\"The space is small enough that if you leaned far enough out of the bunk, you could touch the far wall.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 76,
+          "text": "\"There are photos and drawings stuck to the wall showing various people and places, but predominantly featuring a smiling pair of youngsters; a boy and girl with matching auburn hair.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 77,
+          "text": "\"Some dirty laundry is evident on the floor along with a pair of old slippers. A dog-eared paperback romance novel sits in the corner of the bed.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 77,
+          "text": "\"Some dirty laundry is evident on the floor along with a pair of old slippers. A dog-eared paperback romance novel sits in the corner of the bed.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 158,
+          "text": "\"Cleft Chin picks up a bundle from a nearby shelf and leans toward you.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 269,
+          "text": "\"The exterior illumination is eclipsed as Ford's tall frame fills the doorway.\""
+        }
+      ],
+      "inferences": [
+        "Low waking viewpoint; shelf and indirect light are practical staging for explicitly described objects and doorway."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/bunk.png",
+      "runtime": "game/images/bg/bg bunk.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-d7b20da5-a711-4e19-a4de-3c3e9cbd7be1.png"
+    },
+    {
+      "id": "galley",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: A small cosy galley immediately next to the bunkroom on a working motorboat. The weakened guest is helped to a dining table, eats a hot meal and finally slumps into the corner of a booth. Make that snug three-person dining booth the readable focus, with a small practical kitchen counter and plain cupboards nearby, and a narrow opening back toward the bunkroom. Warm domestic task lighting, close quarters, worn functional surfaces represented with broad color fields. Leave room for Stan and Ford in front. No large dining hall, restaurant decor, scenic sunset window or piles of nautical ornaments.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 227,
+          "text": "\"He puts an arm around your back and assists you to the dining table in the cosy galley adjacent to the bunkroom.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 235,
+          "text": "\"Stan saunters over and drops a plate of hot food in front of you. You tear into it like a wolverine, barely able to register the conversation they're having over your lowered head.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 242,
+          "text": "\"Eventually, your shoveling slows and you slump into the corner of the booth, eyelids drooping. Ford insists that you drink more water.\""
+        }
+      ],
+      "inferences": [
+        "Plain cupboards, a counter and warm task light furnish the described galley; their exact design is not specified."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/galley.png",
+      "runtime": "game/images/bg/bg galley.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-3d6e7e74-2fd9-4153-b8dd-1f74202177e8.png"
+    },
+    {
+      "id": "dinner",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: A close food insert at the cramped boat-galley booth. A plate of hotdogs, mashed potatoes topped with sour cream and chives, peas with butter, and exactly THREE cans of Pitt Cola share the small tabletop. A water glass is within reach because Ford insists the guest drink more water. View down toward the food from a seated diner's position; simple warm indoor light and only a suggestion of booth seating behind. Keep the food recognizable using broad simple shapes, rather than individually rendered peas or crumbs. The cans may read \"Pitt Cola\" in small plain lettering. No canned meat, no fourth can, no invented elaborate feast, no scenic window and no hands or people.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 237,
+          "text": "## [Galley booth: hotdogs, mashed potatoes with sour cream and chives,"
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 238,
+          "text": "## three cans of Pitt Cola, and peas topped with butter]"
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 238,
+          "text": "## three cans of Pitt Cola, and peas topped with butter]"
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 242,
+          "text": "\"Eventually, your shoveling slows and you slump into the corner of the booth, eyelids drooping. Ford insists that you drink more water.\""
+        }
+      ],
+      "inferences": [
+        "Food is specified by the script's staging comment rather than spoken dialogue; the water glass follows the narration."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/dinner.png",
+      "runtime": "game/images/bg/cg dinner.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-c30d3245-53de-4ee9-a1bc-d6cd58ae3f08.png"
+    },
+    {
+      "id": "dock",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: A cold Reykjavik dock in late afternoon. The Stan-O-War 3 has maneuvered into a berth. Supplies and a hammock have just been delivered aboard, and after food and rest the three travelers stand on the dock debating their evening plans. Compose at the standing guest's eye level looking along a short quay toward the boat's side entry, with foreground space for two character sprites. Show the compact boat securely moored beside the walkway, calm harbor water and a few simple low port buildings far away. Cold late-afternoon daylight with soft grey-blue washes. The boat's name may appear subtly as \"Stan-O-War 3\". Shared boat design (a production inference for continuity, not a claim from the narration): a compact two-person oceangoing motorboat suited to fishing and field research, modest low wheelhouse with three front windows, a short aft working deck, simple railings, pale grey hull with a single muted navy stripe, one orange life ring, and a narrow companionway leading below. It contains a cramped bunkroom beside a booth galley, a small lab and a storage room. Keep it human-scale rather than a commercial fishing ship; no industrial winches, cranes or ornate fittings.  No invented mountain panorama, aurora, landmark church or enormous industrial trawler.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 254,
+          "text": "\"Awakened by a sudden jarring of the boat, you hear directions shouted from the deck down to what must be a dock as the Stan-O-War 3 maneuvers carefully into a berth.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 258,
+          "text": "\"You feel the long, drawn out slide as the boat comes to rest against the dock. Moments later, Stan knocks lightly on the door of the cabin before entering.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 262,
+          "text": "s smile \"Welcome to Reykjavik! That's Iceland's main port, if ya didn't know.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 338,
+          "text": "\"After delivering these things to the boat, you take a break to eat, warm up, and rest. By late afternoon, you're feeling steadier on your feet.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 338,
+          "text": "\"After delivering these things to the boat, you take a break to eat, warm up, and rest. By late afternoon, you're feeling steadier on your feet.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 339,
+          "text": "\"With Ford's reminder to speak up if you feel faint still fresh in your ears, you all stand on the dock and debate what to do for the rest of the day.\""
+        }
+      ],
+      "inferences": [
+        "Boat shape and colors are the shared production design; mooring details and low port buildings establish a functional berth without claiming a specific view."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/dock.png",
+      "runtime": "game/images/bg/bg dock.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-a5437724-0e2b-4ee4-ae23-87fc9259dff7.png"
+    },
+    {
+      "id": "street",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: A downtown Reykjavik street close to the harbor, seen at walking eye level during the day. The travelers are shopping for supplies: an anorak, other cold-weather clothes, a bathing suit and a hammock. The Whale Museum is only a couple of blocks from the dock; the same streets are later used at dusk and night and have corners and connecting alleys for an escape. Compose a short human-scale shopping block with a practical clothing-shop window displaying a few coats, a small general-supplies storefront and a visible turn into a side lane. Cold subdued daylight, restrained colored facades and a few simple icy patches at street corners. Sparse, quiet and believable. Store lettering should be abstract or omitted. No monumental cathedral, dramatic mountain skyline or copied postcard perspective.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 330,
+          "text": "\"The three of you wander through downtown Reykjavik, stocking up on supplies and gear. The guys generously purchase you an anorak and sundry other cold weather necessities, along with extra clothes and underthings, and even a bathing suit.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 330,
+          "text": "\"The three of you wander through downtown Reykjavik, stocking up on supplies and gear. The guys generously purchase you an anorak and sundry other cold weather necessities, along with extra clothes and underthings, and even a bathing suit.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 331,
+          "text": "\"They also purchase a hammock to hang from the Stan-O-War 3's beams to act as a makeshift bed.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 413,
+          "text": "\"You're delighted to discover that Iceland's Whale Museum is only a couple of blocks away from the dock.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 904,
+          "text": "\"With a wild look shared between you, the three of you bolt down the street in the shadows, ducking through alleys and skidding around icy corners until you finally make it back to the Stan-O-War III.\""
+        }
+      ],
+      "inferences": [
+        "Shopfronts, clothing window, and neutral facades are inferred from the narrated shopping trip; icy corners are explicit later on the same streets."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/street.png",
+      "runtime": "game/images/bg/bg street.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-b579501a-ac51-4e7c-a4c3-c7a03367b3c5.png"
+    },
+    {
+      "id": "museum",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: Inside Iceland's Whale Museum during the evening visit. The narration greets the guest with life-sized whale sculpture replicas, including the barnacles and whale lice found on real whales, while Ford enthusiastically explains the exhibits. Compose a calm visitor-height view along a modest exhibition aisle, with the immense curved flank of a whale replica high and to one side and a second whale shape receding behind it. Convey scale and a few broad barnacle clusters but avoid painstaking microdetail. Plain display bases or unobtrusive supports and soft neutral exhibition lighting. Leave a clear quiet central space for Ford. These are whale sculptures, not living aquarium animals. No dinosaur skeletons, giant glass aquarium walls or spectacular theme-park architecture.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 447,
+          "text": "\"Inside the museum, you are greeted by life sized whale sculptures, perfect down to the barnacles and lice that generally adorn the behemoth's tough, rubbery skin.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 447,
+          "text": "\"Inside the museum, you are greeted by life sized whale sculptures, perfect down to the barnacles and lice that generally adorn the behemoth's tough, rubbery skin.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 447,
+          "text": "\"Inside the museum, you are greeted by life sized whale sculptures, perfect down to the barnacles and lice that generally adorn the behemoth's tough, rubbery skin.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 448,
+          "text": "\"Ford is a volcano of information that continues to erupt as you wander through the exhibits. You consider telling him that you know most of this already, but he seems so delighted to impart this knowledge that you can't bring yourself to stop him. His enthusiasm is contagious.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 456,
+          "text": "\"While most of the exhibits are sculpture replicas, the \\\"Narwhal Horn\\\" is solidly actual, sitting behind a velvet rope.\""
+        }
+      ],
+      "inferences": [
+        "An aisle, supports and neutral lighting are functional staging; specific whale species, suspension systems and hall colors are not dictated by the text."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/museum.png",
+      "runtime": "game/images/bg/bg museum.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-b54d0239-859d-4bb4-b23e-6e3029a36c7e.png"
+    },
+    {
+      "id": "horn",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: The false-narwhal specimen in a whale museum alcove. A real three-meter-long tapering spiral horn sits behind a velvet rope and a large informative plaque about the narwhal. Ford studies the root; later the guest leans across the plaque to scrape a tiny sample from the horn. Show a plain long horizontal specimen stand at reachable height, with the accessible root on one side and the long pointed tip extending into the alcove; foreground plaque and velvet barrier convey the need to reach over. The horn has a RIGHT-HANDED helical spiral and is explicitly not ivory. Render a dull pale mineral-like surface and broad directional spiral ridges; keep the whole horn's length readable with a non-overlapping twist. A bathroom doorway is nearby to the left. Neutral museum light, subdued wall, plaque lettering too small to read. No magical glow, glowing crystal cavity, giant geode, gems, detached shards or ornate fantasy pedestal.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 456,
+          "text": "\"While most of the exhibits are sculpture replicas, the \\\"Narwhal Horn\\\" is solidly actual, sitting behind a velvet rope.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 457,
+          "text": "\"It's an impressive three meters long and looks, to you, like the horn of a unicorn that undoubtedly suffered from chronic neck pain. Ford is studying its root closely with a triumphant expression.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 460,
+          "text": "f finger \"Yes, just as I suspected! This horn is not ivory at all, and moreover, it's a {i}right-handed{/i} helical spiral, meaning it isn't a Narwhal horn!\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 460,
+          "text": "f finger \"Yes, just as I suspected! This horn is not ivory at all, and moreover, it's a {i}right-handed{/i} helical spiral, meaning it isn't a Narwhal horn!\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 480,
+          "text": "f neutral \"I'm going to head to the bathroom on the left. I will wait there while you use this item by rubbing it against the artifact repeatedly until a viable sample is collected.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 492,
+          "text": "\"The long spiral horn is held in an alcove behind an informative plaque about the majestic Narwhal.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 493,
+          "text": "\"You do your best to be inconspicuous as you lean over the large plaque and stretch your arm out to scrape the horn with the implement that Ford provided. It's not easy. Only a sprinkling of material comes off.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 493,
+          "text": "\"You do your best to be inconspicuous as you lean over the large plaque and stretch your arm out to scrape the horn with the implement that Ford provided. It's not easy. Only a sprinkling of material comes off.\""
+        }
+      ],
+      "inferences": [
+        "Horizontal support and reachable height follow the scraping action. Dull pale non-ivory surface is a production choice; the script gives no precise color or material."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/horn.png",
+      "runtime": "game/images/bg/bg horn.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-23c265ee-4363-4490-9200-df389224f418.png"
+    },
+    {
+      "id": "bathroom",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: A functional museum bathroom to the left of the false-narwhal alcove. Ford has put his Science Bag on the counter and spread several unidentifiable testing mechanisms beside it, to test fresh horn shavings immediately. Compose across a simple sink counter toward an open practical satchel, two or three compact enclosed test devices, a petri dish and a small vial of clear liquid. Leave standing space for Ford and a nearby doorway where the guest can keep watch and peer back toward the museum. Muted cool utilitarian indoor light; broad tile shapes with very little grout detail. The sample should be a few tiny pale flecks, not a full horn. No elaborate brass steampunk laboratory, glowing potions, hospital bed, dinosaur display or aquarium.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 480,
+          "text": "f neutral \"I'm going to head to the bathroom on the left. I will wait there while you use this item by rubbing it against the artifact repeatedly until a viable sample is collected.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 379,
+          "text": "s smile \"Uh oh, he's bringin' his Science Bag. You're in for it now.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 502,
+          "text": "\"You duck into the bathroom to find that Ford has set his 'Science Bag' on the counter and spread several unidentifiable mechanisms around it. He holds out a petri dish and you dump the horn shavings into it.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 502,
+          "text": "\"You duck into the bathroom to find that Ford has set his 'Science Bag' on the counter and spread several unidentifiable mechanisms around it. He holds out a petri dish and you dump the horn shavings into it.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 534,
+          "text": "\"You stand nervously near the door as Ford tests the particles of horn in several unidentifiable mechanisms.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 502,
+          "text": "\"You duck into the bathroom to find that Ford has set his 'Science Bag' on the counter and spread several unidentifiable mechanisms around it. He holds out a petri dish and you dump the horn shavings into it.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 552,
+          "text": "\"Ford fiddles with the various apparati as you pour a small vial of clear liquid into the petri dish.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 534,
+          "text": "\"You stand nervously near the door as Ford tests the particles of horn in several unidentifiable mechanisms.\""
+        }
+      ],
+      "inferences": [
+        "A plain satchel and compact neutral test instruments visualize items whose precise appearance the narration leaves unidentified."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/bathroom.png",
+      "runtime": "game/images/bg/bg bathroom.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-31bbbc88-c7b3-44ac-84f5-c9219658225e.png"
+    },
+    {
+      "id": "pier_night",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: The same Reykjavik berth after dark. Stan exits the boat for his evening out; later the guest and Ford approach on foot, and Stan's recognizable silhouette comes along an icy pier toward the Stan-O-War III. Compose along a narrow pier leading to the boat's accessible entry, with a clear walking route and quiet foreground space for character sprites. Show small icy patches on the planks, dark water and a few low practical harbor lamps. The modest moored motorboat has a little warm cabin light. Deep blue-grey night and restrained warm highlights. Shared boat design (a production inference for continuity, not a claim from the narration): a compact two-person oceangoing motorboat suited to fishing and field research, modest low wheelhouse with three front windows, a short aft working deck, simple railings, pale grey hull with a single muted navy stripe, one orange life ring, and a narrow companionway leading below. It contains a cramped bunkroom beside a booth galley, a small lab and a storage room. Keep it human-scale rather than a commercial fishing ship; no industrial winches, cranes or ornate fittings.  No aurora, spectacular mountain range, decorative night skyline or carpet of sparkling reflections.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 575,
+          "text": "f grin \"Well done! I've still got some further tests to run, but tonight was a total success!\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 584,
+          "text": "\"As you finish speaking, you hear a scrabble of footfalls on the icy pier and recognize Stan's silhouette as he reaches the Stan-O-War III.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 584,
+          "text": "\"As you finish speaking, you hear a scrabble of footfalls on the icy pier and recognize Stan's silhouette as he reaches the Stan-O-War III.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 613,
+          "text": "\"Stan dances out of the Stan-O-War 3 in a white suit with a burgundy dress shirt, its top buttons open and displaying an almost worrying amount of chest hair.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 580,
+          "text": "f neutral \"We can expect him anywhere between now and never. If dawn comes and he's not back, we'll go get him.\" (show_act=_(\"sighing\"))"
+        }
+      ],
+      "inferences": [
+        "The shared boat design ensures continuity. A few lamps and warm cabin light make the explicitly nighttime pier readable; their fixtures are not specified."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/pier_night.png",
+      "runtime": "game/images/bg/bg pier night.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-2b8acb97-7f71-4c26-97bb-c501397ea794.png"
+    },
+    {
+      "id": "club_street",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: At night outside Monkey Bar in Reykjavik. A brightly colored sign explicitly declares \"Monkey Bar\" and throws dazzling rainbow neon onto the immediately surrounding street. Stan stays in the shadows on the far side, bypasses the main door and slips down the dark alley beside the club toward a tall fenced area. Later, a couple of taxis stand outside the front door. Compose diagonally across the short street, preserving a strong contrast between the localized rainbow sign and the dark route beside the building, with two modest contemporary taxis at the curb. Render the exact words \"Monkey Bar\" legibly, not just an animal mascot. Keep neon vivid only in the sign and a small nearby patch; simplify all other surfaces and make character standing areas calm. Cold night, no detailed distant skyline or aurora.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 628,
+          "text": "\"A brightly colored sign declares 'Monkey Bar', lighting up the surrounding street with dazzling neon rainbows.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 628,
+          "text": "\"A brightly colored sign declares 'Monkey Bar', lighting up the surrounding street with dazzling neon rainbows.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 630,
+          "text": "\"You're surprised when Stan sticks to the shadows on the far side of the street and bypasses the club, ducking down a dark alley beside it, with you on his heels.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 630,
+          "text": "\"You're surprised when Stan sticks to the shadows on the far side of the street and bypasses the club, ducking down a dark alley beside it, with you on his heels.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 632,
+          "text": "\"Stan sniffs the air and stops at a chained opening in a tall fence. He peers through a crack for a moment before pulling something out of his pocket.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 788,
+          "text": "\"There are a couple of taxis parked outside, and he leans into one of their windows. You can't catch what was said inside, but as Stan ushers you to a nearby alley and pulls you into the shadows, you hear the taxi burn rubber, leaving the area at high speed just as the club doors open.\""
+        }
+      ],
+      "inferences": [
+        "The diagonal street view and taxi models are staging choices; neither an iconic monkey-head sign nor specific taxi colors are required by the narration."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/club_street.png",
+      "runtime": "game/images/bg/bg club street.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-ec6040db-60ce-4d20-bc2e-5896a27c3292.png"
+    },
+    {
+      "id": "club_alley",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: A shadowy nook immediately behind Monkey Bar at night. The text explicitly places a couple of garbage bins and a sand-filled bucket beside a propped-open fire door. Access is through an opening in a tall fence, closed with a chain and a padlock that Stan has just opened. Compose from inside the little enclosure: fire door to one side, bins and bucket readable beside it, and the fenced gate toward the opposite side. Keep enough calm standing room for Stan and the smoking patron sprites. A little club light spills through the open fire door, while most of the nook stays dark. The lock is a small ordinary open padlock, not a magical gadget. No decorative clutter, sweeping city view, repeated neon fixtures or people painted into the background.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 632,
+          "text": "\"Stan sniffs the air and stops at a chained opening in a tall fence. He peers through a crack for a moment before pulling something out of his pocket.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 633,
+          "text": "\"You see a flash of metal in his hand as he manipulates the padlock, which opens easily. Next thing you know, he's pulling you through the fence and closing it behind you.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 639,
+          "text": "\"You find yourself in a shadowy nook behind the club. It boasts a couple of garbage bins, and a sand-filled bucket sits by a propped open fire door.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 639,
+          "text": "\"You find yourself in a shadowy nook behind the club. It boasts a couple of garbage bins, and a sand-filled bucket sits by a propped open fire door.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 639,
+          "text": "\"You find yourself in a shadowy nook behind the club. It boasts a couple of garbage bins, and a sand-filled bucket sits by a propped open fire door.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 639,
+          "text": "\"You find yourself in a shadowy nook behind the club. It boasts a couple of garbage bins, and a sand-filled bucket sits by a propped open fire door.\""
+        }
+      ],
+      "inferences": [
+        "Light spilling through the doorway and relative placement of gate and bins are practical scene staging."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/club_alley.png",
+      "runtime": "game/images/bg/bg club alley.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-8cad74cf-922d-4803-9c8e-dd0051f859c7.png"
+    },
+    {
+      "id": "club",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: The interior of Monkey Bar during a private album release party, a warm steamy club with hot tubs. The entrance route leads to a WALL OF CLOTHING CUBBIES, where Stan and the guest stow their street clothes, then to crowded hot tubs in the center; a sauna room is accessible from this central area. Stage the view from near the cubbies so their plain open squares are readable at one side, two simple hot-tub basins occupy the middle distance, and a plainly readable doorway suggests the sauna. Indicate a lively older-adult crowd using only a few very low-contrast distant heads and shoulders, with their bodies entirely concealed by high tub rims and steam. No identifiable main characters, visible nudity, children or detailed crowd portraits. Modest party-colored light and broad steam washes, subdued contrast outside small practical lights. No giant concert stage, luxury resort waterfall, disco palace or intricate luminous plumbing.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 770,
+          "text": "lizard \"Your accent is atrocious, and who the hell are you? This is the album release party! We're supposed to have this place to ourselves. I'm calling security.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 691,
+          "text": "\"Stan leads the way into the club. Nobody stops you as you weave between naked, sweaty bodies toward a wall of cubbies.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 694,
+          "text": "\"You follow suit, stowing your clothes in the cubby with Stan's before following him into the center of the club.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 695,
+          "text": "\"Stan takes a look at one of the crowded hot tubs and winces.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 697,
+          "text": "s swim grimace \"Ehh, on second thought, sitting in what's essentially old man soup doesn't have the same appeal in reality that it had in my head. Wanna try the sauna room instead?\""
+        }
+      ],
+      "inferences": [
+        "Party lighting and the sauna door are practical staging. The crowd is discreetly cropped/occluded to preserve the existing visual-novel presentation."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/club.png",
+      "runtime": "game/images/bg/bg club.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-dafc834f-4e2c-47ed-89a6-786a6b81cdd2.png"
+    },
+    {
+      "id": "sauna",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: The wooden sauna room reached from Monkey Bar's hot-tub area. The guest finds a place on a WOODEN BENCH in oppressive heat. Stan returns with two cans of beer; patrons chat as in a cafe and use small towels on the benches. Most patrons are older men. Compose from seated eye level along a simple timber bench toward another short bench at the far wall, with room for the existing Stan swimwear sprite in front. A few faint, distant adult head-and-shoulder silhouettes may suggest other bathers, fully screened below shoulder level by bench backs, towels or a steam band. No visible nudity, children or main-character painting. Two plain beer cans can rest near the foreground place, without branding. Warm close air and a gentle heat haze, soft matte timber shapes. Do not turn the entire room into a glowing furnace; avoid ornate stoves, exposed flames, fantasy lighting or excessive wooden grain.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 704,
+          "text": "\"You find a spot on one of the wooden benches in the crushing, oppressive heat, sweat beginning to roll down your body. It's actually quite nice compared to the raw chill outside.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 705,
+          "text": "\"Stan disappears for a few moments and reappears with two cans of beer which immediately bead up with condensation.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 739,
+          "text": "\"Many of the patrons are nude. They tote around small towels to place on the benches before they sit and chat away just as they would in a cafe.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 740,
+          "text": "\"While the clientele are varied, the vast majority of them are men, on the older side. It's becoming difficult to find a place to aim your eyes, so you focus on Stan.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 757,
+          "text": "\"The two of you sip your beers and sweep your gaze over a panorama of wrinkly genitals for a few more minutes before Stan speaks again.\""
+        }
+      ],
+      "inferences": [
+        "Seated viewpoint and discreetly occluded bathers stage the narrated social sauna; exact seating plan and light fixtures are unspecified."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/sauna.png",
+      "runtime": "game/images/bg/bg sauna.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-a6126314-6f2f-4559-bce4-368575390855.png"
+    },
+    {
+      "id": "theater",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: An indoor cinema during the Reykjavik International Film Festival. An audience in puffy cold-weather anoraks shuffles toward rows of seats; a row has THREE adjacent free seats for the player and twins. The lights dim for a period drama set in turn-of-the-century Iceland. Stan brings popcorn and many snacks, and later the action moves over and between rows toward the front. Compose from a visitor at the end of a row, keeping three neighboring empty seats clearly recognizable in the foreground, an aisle to the front, and a large film screen ahead. Background audience members are sparse low-contrast silhouettes in bulky winter coats, with no detailed portraits or main characters. The screen shows a simple brooding windswept clifftop and dark rocks with nearly hidden tiny cipher-like marks, not readable text. Darkened auditorium, restrained cool screen light, no lavish theatrical architecture or busy festival signage.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 353,
+          "text": "f \"Regrettably, I believe it to be a departure from her previous work; tonight's film seems to be a period drama set in turn of the century Iceland.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 389,
+          "text": "p \"Yeah! Every time someone broods on a windy clifftop, that's a sip.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 858,
+          "text": "\"A sea of anoraks mill around you and Ford as you shuffle toward a row with three free seats. You push Ford in first, not wanting to be caught on the edge of the banter.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 859,
+          "text": "\"The lights dim, and finally you hear Stan grumbling his way past knees to get to you, laden with a cornucopia of snacks and popcorn.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 859,
+          "text": "\"The lights dim, and finally you hear Stan grumbling his way past knees to get to you, laden with a cornucopia of snacks and popcorn.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 876,
+          "text": "f grin \"Did you see the markings on the rocks in the first scene with the protagonist? The same symbols appear, all nearly obscured by darkness, throughout the piece. It must be a cipher, but I can't crack it without more information!\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 903,
+          "text": "\"Ducking through the now agitated mass of puffy arctic clothing, you all find your way to the exit just in time to hear sirens.\""
+        }
+      ],
+      "inferences": [
+        "Seat color and auditorium architecture are unspecified; leave them plain. Background audience is low-detail to keep focus on sprites."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/theater.png",
+      "runtime": "game/images/bg/bg theater.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-0dea1646-8f22-4933-b54d-761473840493.png"
+    },
+    {
+      "id": "cabin_night",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: Aboard the Stan-O-War 3 after a cold late-night return from the club. It is a modest shared living cabin; Ford steps into it directly from his lab after retrieving and testing a sample. Compose a compact dry warm room below deck with a simple place to sit, a narrow lab doorway to one side and a clear route deeper into the boat toward the sleeping and storage areas. Through the lab doorway show only a plain workbench, a Science Bag and a few small sample-testing devices. An orthopedic back pillow may sit on the seat, as Stan asks for it on the other route. Quiet warm practical light, simple boat partitions and minimal clutter. No giant science-fantasy laboratory, glowing specimen collection, detective red-string wall or detailed scenic windows.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 820,
+          "text": "s evening smile \"Whoof! Home Sweet Boat!\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 916,
+          "text": "call chapter(_(\"Outro\"), _(\"Home Sweet Boat\"))"
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 826,
+          "text": "f smile \"That won't be necessary. I was able to retrieve a sample and run some tests, and you won't believe what I've discovered!\" (show_act=_(\"stepping in from his lab\"))"
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 596,
+          "text": "s grimace \"Great, now where's my orthopedic back pillow?\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 833,
+          "text": "\"After changing into dry clothes, you join Ford to get your bed ready.\""
+        }
+      ],
+      "inferences": [
+        "Main-cabin floor plan, simple seat and workbench are inferred; the script specifies only the return to the boat, adjacent lab and preparation for bed."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/cabin_night.png",
+      "runtime": "game/images/bg/bg cabin night.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-c62fd178-8360-411a-b685-f98eeae2c119.png"
+    },
+    {
+      "id": "storage",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: Nighttime in a small storage room aboard the boat, now being cleared as a temporary sleeping space. Stan clears floor space while Ford helps hang the newly bought HAMMOCK FROM THE RAFTERS; the guest wraps up in blankets and lies CROSSWISE in it. Show a roomy diagonal sling of plain canvas at a realistic height below exposed overhead rafters, tied securely at both ends, with soft blankets arranged to allow a person to lie diagonally across the hammock rather than lengthwise like a banana. A few plain storage boxes sit pushed against one wall; most of the floor is cleared. Quiet enclosed cabin atmosphere with soft low practical light and broad muted wood shapes. No people, luxurious bedroom, elaborate fishing paraphernalia or dramatic moonlit porthole view.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 923,
+          "text": "\"The three of you toss quick stories back and forth as you prepare for bed. Stan clears space in the storage room while Ford helps you hang your hammock from the rafters, taking some time to also enlighten you on the correct way to use a hammock.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 923,
+          "text": "\"The three of you toss quick stories back and forth as you prepare for bed. Stan clears space in the storage room while Ford helps you hang your hammock from the rafters, taking some time to also enlighten you on the correct way to use a hammock.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 923,
+          "text": "\"The three of you toss quick stories back and forth as you prepare for bed. Stan clears space in the storage room while Ford helps you hang your hammock from the rafters, taking some time to also enlighten you on the correct way to use a hammock.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 928,
+          "text": "\"After wrapping yourself in your blankets and lying crosswise in the hammock, you descend into slumber with a smile.\""
+        }
+      ],
+      "inferences": [
+        "Canvas, box placement and lamp are minimal set dressing; their appearance is not specified."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/storage.png",
+      "runtime": "game/images/bg/bg storage.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-b3ba4e52-bd9c-4402-a750-e75e7e5e8010.png"
+    },
+    {
+      "id": "menu",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: Title-background illustration synthesized from the rescue premise, not a literal scene in the dialogue: a small oceangoing motorboat approaches a tiny flotilla of lashed plastic garbage and styrofoam on otherwise endless North Atlantic water. Keep the boat on the right half, the small flotilla low in the image and generous quiet sky and water on the left for the game title and menus. Hazy harsh daytime light as in the rescue narration; subdued slate-blue sea with very few broad wave marks. Shared boat design (a production inference for continuity, not a claim from the narration): a compact two-person oceangoing motorboat suited to fishing and field research, modest low wheelhouse with three front windows, a short aft working deck, simple railings, pale grey hull with a single muted navy stripe, one orange life ring, and a narrow companionway leading below. It contains a cramped bunkroom beside a booth galley, a small lab and a storage room. Keep it human-scale rather than a commercial fishing ship; no industrial winches, cranes or ornate fittings.  No people or visible body, dramatic sunset, icebergs, towering mountains or fantasy effects. The boat name can be omitted at this scale.",
+      "evidence": [
+        {
+          "file": "game/script.rpy",
+          "line": 19,
+          "text": "call chapter(_(\"Rescue\"), _(\"Somewhere in the North Atlantic\"))"
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 28,
+          "text": "\"Your small collection of lashed-together garbage is jostled by waves. Vaguely, you register a roaring motor assaulting your ears, but after days of silence you assume it's your own parched brain screaming at itself.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 25,
+          "text": "\"Nothing but dark water as far as the eye can see. The sun beats mercilessly upon your dehydrated body, sprawled as it is across a small flotilla of plastic garbage and styrofoam chunks.\""
+        },
+        {
+          "file": "game/script.rpy",
+          "line": 32,
+          "text": "s_voice \"Whoa, there's a body on this thing! Sixer, reverse engines!\""
+        }
+      ],
+      "inferences": [
+        "This is an auxiliary title illustration assembled from the rescue premise, with title-safe composition; it is not a narrated tableau."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/menu.png",
+      "runtime": "game/images/bg/bg menu.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-6742c17c-c989-4e84-b6e1-6a19d0e47d53.png"
+    },
+    {
+      "id": "journal",
+      "prompt": "Use case: illustration-story. Asset: a newly composed 16:9 visual novel background generated from the written scene below. Style: a sparse 2D gouache and watercolor animation painting, broad matte shapes, very little surface detail, soft edges, restrained saturation and a narrow value range. Keep background contrast below that of crisp cartoon character sprites. Describe light with broad washes; avoid photorealism, tiny repeated details, heavy outlines, bloom and busy paper grain. Compose the location afresh from the story. Keep foreground standing areas calm and leave the bottom quarter usable behind the dialogue panel. Do not draw Stan, Ford, the player, captions, watermarks or a border. Background bystanders are included only where the scene explicitly calls for them. Scene: Auxiliary journal backdrop for the player's field notes about their rescuers. Show a plain notebook opened to a new blank spread on a simple cabin tabletop, from directly above. Broad warm paper shapes, an understated crease and only enough book structure to read as an open journal. Leave virtually the entire spread blank for the game's separately rendered text. No generated writing, symbols, sea-monster drawings, compass, stains or decorative clutter. Soft quiet indoor light and very little surface texture.",
+      "evidence": [
+        {
+          "file": "game/seas_screens.rpy",
+          "line": 217,
+          "text": "text _(\"Ford has started a new journal page with your name on it.\"):"
+        }
+      ],
+      "inferences": [
+        "The ending screen mentions a journal page, not a physical notebook layout. This optional art is auxiliary; the current Journal screen uses its own GUI panels."
+      ],
+      "input_images": [],
+      "output": "dev/issue-6/fresh-text-only/journal.png",
+      "runtime": "game/images/bg/bg journal.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-5cea2f30-c7f7-42a7-a1a6-5fb8f8e5195f.png"
+    }
+  ],
+  "status": "Installed fresh text-only generation for all 19 backgrounds. No image references were passed."
+}

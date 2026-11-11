@@ -1,0 +1,160 @@
+{
+  "method": "19 fresh text-to-image generations from narration/dialogue, with no input images or style references.",
+  "prompts": "dev/issue-6/fresh-text-only/prompts.json",
+  "source_citations": "Verified against exact current file lines.",
+  "backgrounds": [
+    {
+      "id": "raft",
+      "source": "dev/bg/raft.png",
+      "runtime": "game/images/bg/bg raft.jpg",
+      "sha256": "8dd24570f20c9b4375c355baf51be5ea406ecfe520cb2ea48578d90d8a84c220",
+      "image_inputs": 0
+    },
+    {
+      "id": "bunk",
+      "source": "dev/bg/bunk.png",
+      "runtime": "game/images/bg/bg bunk.jpg",
+      "sha256": "da012c17a90e6739aef08405c29aa55ef524980a54c8693b99d0465b69f69fbe",
+      "image_inputs": 0
+    },
+    {
+      "id": "galley",
+      "source": "dev/bg/galley.png",
+      "runtime": "game/images/bg/bg galley.jpg",
+      "sha256": "71daf47f55c8bd91692563a1f91539102e0e8c46899699bc22ce3c224e3b17aa",
+      "image_inputs": 0
+    },
+    {
+      "id": "dinner",
+      "source": "dev/bg/dinner.png",
+      "runtime": "game/images/bg/cg dinner.jpg",
+      "sha256": "c186ffca11e2669cfa54152e944195b6fe8fcd03d35422a800efc67ab41d6fe8",
+      "image_inputs": 0
+    },
+    {
+      "id": "dock",
+      "source": "dev/bg/dock.png",
+      "runtime": "game/images/bg/bg dock.jpg",
+      "sha256": "4bea4ead4cf6df2669236c9940cefe778e4c7a7b9ed3eb4c0465735d60fda6bb",
+      "image_inputs": 0
+    },
+    {
+      "id": "street",
+      "source": "dev/bg/street.png",
+      "runtime": "game/images/bg/bg street.jpg",
+      "sha256": "2cb6ac46db4aa2b75c15d6baaf731808e46287b4b46d9daa2d5ac24912b1d990",
+      "image_inputs": 0
+    },
+    {
+      "id": "museum",
+      "source": "dev/bg/museum.png",
+      "runtime": "game/images/bg/bg museum.jpg",
+      "sha256": "5b4e25302719df41c88071a41b01e1ef939b1e11ccfb064a34408e0f88993817",
+      "image_inputs": 0
+    },
+    {
+      "id": "horn",
+      "source": "dev/bg/horn.png",
+      "runtime": "game/images/bg/bg horn.jpg",
+      "sha256": "19313ff34a12d35a208d61a2c49f648572dc561c7f0934dbc0024a6928aeadad",
+      "image_inputs": 0
+    },
+    {
+      "id": "bathroom",
+      "source": "dev/bg/bathroom.png",
+      "runtime": "game/images/bg/bg bathroom.jpg",
+      "sha256": "5ff43d0ee9744e5bb16a87b2015f1bcfd6e6861c899122880bd55d5fb8397717",
+      "image_inputs": 0
+    },
+    {
+      "id": "pier_night",
+      "source": "dev/bg/pier_night.png",
+      "runtime": "game/images/bg/bg pier night.jpg",
+      "sha256": "576ab28621fe12575f2600974c8b2a592a59a589f6eeb2ac9f388fccc3032bbc",
+      "image_inputs": 0
+    },
+    {
+      "id": "club_street",
+      "source": "dev/bg/club_street.png",
+      "runtime": "game/images/bg/bg club street.jpg",
+      "sha256": "c4febbf5ca7897cce34d01d08f0027c0056fca970fa553d7448ff6cec0353bba",
+      "image_inputs": 0
+    },
+    {
+      "id": "club_alley",
+      "source": "dev/bg/club_alley.png",
+      "runtime": "game/images/bg/bg club alley.jpg",
+      "sha256": "5355a6824871d7e01ceb906a7eaf64e9c6f452ab1428aed7e4614916c57ffc00",
+      "image_inputs": 0
+    },
+    {
+      "id": "club",
+      "source": "dev/bg/club.png",
+      "runtime": "game/images/bg/bg club.jpg",
+      "sha256": "9dca1a0a7ac5d0a1ad105838a4b1f074cf0e73df476e6aae222628abf0cc68cf",
+      "image_inputs": 0
+    },
+    {
+      "id": "sauna",
+      "source": "dev/bg/sauna.png",
+      "runtime": "game/images/bg/bg sauna.jpg",
+      "sha256": "db121e4e32039645644d49486eca156be814ae4de713d54b3bac231e14d78040",
+      "image_inputs": 0
+    },
+    {
+      "id": "theater",
+      "source": "dev/bg/theater.png",
+      "runtime": "game/images/bg/bg theater.jpg",
+      "sha256": "74a1e06d86f8436d1b5922cc2ef52ef6df05875c1ebdf74486b342a006bc2772",
+      "image_inputs": 0
+    },
+    {
+      "id": "cabin_night",
+      "source": "dev/bg/cabin_night.png",
+      "runtime": "game/images/bg/bg cabin night.jpg",
+      "sha256": "da22a29f38a8288ebc9ebfa44945e4403e073fe13a76c570d8afb290caa8deb8",
+      "image_inputs": 0
+    },
+    {
+      "id": "storage",
+      "source": "dev/bg/storage.png",
+      "runtime": "game/images/bg/bg storage.jpg",
+      "sha256": "e2b28c294de2a4a764ec365bcf10cf653afe6b5c5755b10ae891fb9231e65dde",
+      "image_inputs": 0
+    },
+    {
+      "id": "menu",
+      "source": "dev/bg/menu.png",
+      "runtime": "game/images/bg/bg menu.jpg",
+      "sha256": "2e539e494ddf175cd430cf22373248c8c24483ad652199bbf5806d175f5f443e",
+      "image_inputs": 0
+    },
+    {
+      "id": "journal",
+      "source": "dev/bg/journal.png",
+      "runtime": "game/images/bg/bg journal.jpg",
+      "sha256": "a3194c08ab7baa97fa5a1a0d85de1ecf8843eddefe9288377bb16a35e48c02ea",
+      "image_inputs": 0
+    }
+  ],
+  "sprite_files_unchanged": 60,
+  "lint": "passed, RenPy 8.5.3",
+  "ford_playthrough": {
+    "choice": 1,
+    "screenshots": 211,
+    "stan": 0,
+    "ford": 13
+  },
+  "save_load": {
+    "stan": 0,
+    "ford": 13,
+    "name": "Pat",
+    "home": "nowhere in particular",
+    "pronouns": [
+      "they",
+      "them"
+    ]
+  },
+  "preview": "dev/issue-6/selected-review.html",
+  "published": false
+}

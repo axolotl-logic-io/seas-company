@@ -176,18 +176,7 @@ def gui_assets():
     save(clear, f"{GUI}/overlay/game_menu.png")
     save(Image.new("RGBA", (1920, 1080), (10, 6, 4, 150)), f"{GUI}/overlay/confirm.png")
 
-    # Main menu: sunset boat with a dark gradient for the title + menu on the left.
-    mm = Image.open(f"{IMG}/bg/bg menu.jpg").convert("RGBA")
-    grad = Image.new("L", (1920, 1080))
-    gd = ImageDraw.Draw(grad)
-    for x in range(1920):
-        a = 210 if x < 380 else max(0, int(210 - (x - 380) * 0.33))
-        gd.line([x, 0, x, 1080], fill=a)
-    shade = Image.new("RGBA", (1920, 1080), (14, 10, 22, 255))
-    shade.putalpha(grad)
-    mm.alpha_composite(shade)
-    save(mm.convert("RGB"), f"{GUI}/main_menu.png")
-    save(clear, f"{GUI}/overlay/main_menu.png")
+    main_menu_asset()
 
     # Chapter card / journal page background.
     save(panel(1200, 560, inset=10, amp=4, radius=10), f"{GUI}/chapter_card.png")
@@ -281,18 +270,43 @@ def gui_assets():
     save(hth, f"{GUI}/scrollbar/horizontal_hover_thumb.png")
 
 
-def web_assets():
+def main_menu_asset():
+    """Refresh the menu backdrop without regenerating sprites or other UI art."""
+    # Main menu: sunset boat with a dark gradient for the title + menu on the left.
+    mm = Image.open(f"{IMG}/bg/bg menu.jpg").convert("RGBA")
+    grad = Image.new("L", (1920, 1080))
+    gd = ImageDraw.Draw(grad)
+    for x in range(1920):
+        a = 210 if x < 380 else max(0, int(210 - (x - 380) * 0.33))
+        gd.line([x, 0, x, 1080], fill=a)
+    shade = Image.new("RGBA", (1920, 1080), (14, 10, 22, 255))
+    shade.putalpha(grad)
+    mm.alpha_composite(shade)
+    save(mm.convert("RGB"), f"{GUI}/main_menu.png")
+    save(Image.new("RGBA", (1920, 1080), (0, 0, 0, 0)), f"{GUI}/overlay/main_menu.png")
+
+
+def web_assets(include_icon=True):
     """Write the icon and loading image that the Ren'Py web build reads from the project root."""
     root = os.path.dirname(GAME)
-    Image.open(f"{SRC}/ui/icon.png").convert("RGBA").resize((512, 512), Image.LANCZOS).save(
-        os.path.join(root, "web-icon.png"), optimize=True)
+    if include_icon:
+        Image.open(f"{SRC}/ui/icon.png").convert("RGBA").resize((512, 512), Image.LANCZOS).save(
+            os.path.join(root, "web-icon.png"), optimize=True)
     Image.open(f"{IMG}/bg/bg menu.jpg").convert("RGB").resize((1280, 720), Image.LANCZOS).save(
         os.path.join(root, "web-presplash.jpg"), quality=85, optimize=True)
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--backgrounds-only", action="store_true",
+                        help="Rebuild scene backgrounds, menu backdrop and web loading image; preserve sprites and other UI art.")
+    args = parser.parse_args()
     bg_assets()
-    sprite_assets()
-    gui_assets()
-    web_assets()
+    if args.backgrounds_only:
+        main_menu_asset()
+    else:
+        sprite_assets()
+        gui_assets()
+    web_assets(include_icon=not args.backgrounds_only)
     print("done")

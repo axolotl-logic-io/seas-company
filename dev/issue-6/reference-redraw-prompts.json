@@ -1,0 +1,238 @@
+{
+  "issue": "https://github.com/axolotl-logic-io/seas-company/issues/6",
+  "selection": "B / soft painted harbour, confirmed by exact pixel match to user attachment",
+  "approved_reference": "dev/issue-6/selected-style.png",
+  "sprites": "Keep all existing source and runtime sprites unchanged. Sprite prompt exploration is deferred.",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "raft",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Point of view looking down at a tiny makeshift raft made of lashed-together plastic garbage, bottles and styrofoam chunks floating alone on endless dark blue ocean water, a battered sun hat lying on it, harsh white midday sun glaring, heat shimmer, empty horizon in every direction, bleak and lonely.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/raft.png"
+      ],
+      "output": "dev/issue-6/regenerated/raft.png",
+      "runtime": "game/images/bg/bg raft.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-9dbe51c2-7216-4ee2-91bb-c151f1ac475e.png"
+    },
+    {
+      "id": "bunk",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Interior of a claustrophobic, closet-sized sleeping cabin on an old fishing boat: a narrow bunk bed with rumpled soft blankets in the foreground, wood-paneled walls covered with taped-up photos and crayon drawings of a smiling boy and girl twins with auburn hair, a small porthole showing grey sea, an IV saline bag hanging from a hook above the bunk, dirty laundry and a pair of old slippers on the floor, a dog-eared paperback romance novel on the corner of the bed, a small water bottle on a ledge, warm dim lamplight.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/bunk.png"
+      ],
+      "output": "dev/issue-6/regenerated/bunk.png",
+      "runtime": "game/images/bg/bg bunk.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-5059fbcb-6ba3-4003-ac3a-d22d3aed2505.png"
+    },
+    {
+      "id": "galley",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Interior of a cozy cramped boat galley kitchen on a weathered old fishing trawler: a small booth table with red vinyl benches, a tiny stove with a dented pot, cupboards with latches, a porthole with evening light, hanging lantern, fishing nets and a framed photo of two kids, a pine tree emblem mug, warm yellow light.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/galley.png"
+      ],
+      "output": "dev/issue-6/regenerated/galley.png",
+      "runtime": "game/images/bg/bg galley.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-887baaa2-3682-46c1-8fd9-78d0901e80af.png"
+    },
+    {
+      "id": "dinner",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Close-up illustration of the small boat galley table in warm lamplight: a platter of hot dogs in buns, mashed potatoes topped with sour cream and chopped green chives, exactly three cans labeled 'Pitt Cola', a bowl of peas topped with pats of butter, ketchup bottle and a glass of water. No canned meat, no fourth cola can, no people. Keep the food clearly readable while simplifying surface detail. Keep the exact three cans and corrected food items from the scene reference; this is a food close-up, not a character-stage layout.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/dinner.png"
+      ],
+      "output": "dev/issue-6/regenerated/dinner.png",
+      "runtime": "game/images/bg/cg dinner.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-867f9bed-415b-4c6e-a719-1f236b7c2019.png"
+    },
+    {
+      "id": "dock",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, sparse secondary detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Use soft edge transitions, broad matte painted color planes and gentle atmospheric separation; no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene. A harbour in Reykjavik, Iceland on a crisp cold afternoon: a wooden dock with an old patched-up blue-and-white fishing trawler named 'Stan-O-War III' moored at the berth, colorful corrugated-metal houses with red and blue roofs on the shore, snowy mountains across the bay, gulls, pale wintry sky, coiled ropes and buoys on the dock. Reference image is a composition and boat-design reference. Keep the blue-and-white trawler on the left, the dock foreground and Reykjavik buildings on the right, but reduce the huge amount of surface detail. Preserve the boat silhouette, not every rope and window. No new props or people. Very restrained watercolor and gouache wash, large low-contrast shapes, lost edges in distant mountains and houses. Soft desaturated blue-grey and sand palette. Avoid paper speckles and busy brush marks.",
+      "references": [
+        "dev/issue-6/original-backgrounds/dock.png"
+      ],
+      "output": "dev/issue-6/regenerated/dock.png",
+      "runtime": "game/images/bg/bg dock.jpg",
+      "status": "selected",
+      "generated_source": "dev/issue-6/b-painted/bg_dock.png",
+      "note": "Approved sample reused exactly; not regenerated."
+    },
+    {
+      "id": "street",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Downtown Reykjavik shopping street on a cold afternoon: colorful painted wooden and corrugated-metal shopfronts, an outdoor gear shop with anoraks in the window, a cafe, snowy sidewalk, the Hallgrimskirkja church tower in the distance, pale low winter sun.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/street.png"
+      ],
+      "output": "dev/issue-6/regenerated/street.png",
+      "runtime": "game/images/bg/bg street.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-caf2e497-af04-4f6d-82f5-85b3cce3fbe4.png"
+    },
+    {
+      "id": "museum",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Interior of a large whale museum in a warehouse hall: life-sized hanging whale sculptures (blue whale, sperm whale, orca) suspended overhead, recognizable species silhouettes with only broad simplified markings, deep blue mood lighting, informative plaques, polished concrete floor, rope barriers.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/museum.png"
+      ],
+      "output": "dev/issue-6/regenerated/museum.png",
+      "runtime": "game/images/bg/bg museum.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-2232bbc5-59f9-4688-a76e-526230250dee.png"
+    },
+    {
+      "id": "horn",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Museum exhibit alcove: a single enormous three-meter-long spiral ivory horn like a giant unicorn horn, displayed horizontally on brackets behind a red velvet rope, a large informational plaque in front (with unreadable small lettering), soft spotlight, dark blue walls, slightly mysterious glow at the horn's root. Keep the one horn and its handed spiral clearly readable; simplify all surrounding decor.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/horn.png"
+      ],
+      "output": "dev/issue-6/regenerated/horn.png",
+      "runtime": "game/images/bg/bg horn.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-13cfee06-edf2-4fbf-8a65-61dfd83324f6.png"
+    },
+    {
+      "id": "bathroom",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Inside a small public museum restroom: white tile, a long sink counter on which an old leather satchel 'science bag' lies open with strange brass and copper scientific gadgets, petri dishes, vials of liquid and blinking devices spread around it, fluorescent lighting, a mirror, a door slightly ajar.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/bathroom.png"
+      ],
+      "output": "dev/issue-6/regenerated/bathroom.png",
+      "runtime": "game/images/bg/bg bathroom.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-2d9278b8-8626-445a-bb36-b5d9b73e3e8b.png"
+    },
+    {
+      "id": "pier_night",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. A Reykjavik harbour pier at night: icy wooden planks glittering with frost, an old blue-and-white fishing trawler 'Stan-O-War III' moored with warm light glowing from its cabin portholes, dark water reflecting harbor lamps, faint green aurora borealis in the starry sky, snow-dusted mountains silhouetted.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/pier_night.png"
+      ],
+      "output": "dev/issue-6/regenerated/pier_night.png",
+      "runtime": "game/images/bg/bg pier night.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-674d4d8e-ff78-4bf0-923f-d8af62fe95db.png"
+    },
+    {
+      "id": "club_street",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. A narrow Reykjavik street at night with a bar on the corner: a bright, colorful neon sign of a grinning cartoon monkey face over the door, restrained localized neon color spilling onto the wet snowy street, a dark shadowy alley beside the building, a tall wooden fence, two taxis parked at the curb, bass-thumping vibe.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/club_street.png"
+      ],
+      "output": "dev/issue-6/regenerated/club_street.png",
+      "runtime": "game/images/bg/bg club street.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-cc61aee5-56da-4149-8919-ff74211488fb.png"
+    },
+    {
+      "id": "club_alley",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. A shadowy fenced nook behind a nightclub at night: a couple of garbage bins, a sand-filled bucket used as an ashtray, a propped-open metal fire door with warm pink and purple light and steam spilling out, a tall wooden fence with a chained gate and an opened padlock, wet cobblestones, a single caged wall lamp.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/club_alley.png"
+      ],
+      "output": "dev/issue-6/regenerated/club_alley.png",
+      "runtime": "game/images/bg/bg club alley.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-bc798efc-5ae2-4785-b5e4-d8c094d318ad.png"
+    },
+    {
+      "id": "club",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Interior of a steamy Icelandic hot-tub nightclub: a wall of wooden cubbyholes with folded clothes, several bubbling hot tubs with steam rising, colorful party lights and disco ball, DJ booth with speakers, wet tiled floor, towels hung on hooks, loud and crowded atmosphere implied by empty plastic cups (no people shown).",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/club.png"
+      ],
+      "output": "dev/issue-6/regenerated/club.png",
+      "runtime": "game/images/bg/bg club.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-03f17ea9-fe8c-43b4-bdd4-4e9962bdff2f.png"
+    },
+    {
+      "id": "sauna",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Inside a hot wooden sauna room: tiered wooden benches, a stove of hot stones with a wooden bucket and ladle, thick steam, dim warm amber light, small towels folded on the benches, sweaty heat atmosphere.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/sauna.png"
+      ],
+      "output": "dev/issue-6/regenerated/sauna.png",
+      "runtime": "game/images/bg/bg sauna.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-ac624504-f0d7-4ffc-adfa-aab7979e0cf6.png"
+    },
+    {
+      "id": "theater",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Interior of a small art-house cinema auditorium during a film festival: rows of red velvet seats, a large glowing screen showing a moody windswept clifftop in turn-of-the-century Iceland, dim aisle lights, a festival banner, popcorn spilled on the floor, puffy winter coats draped over seats.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/theater.png"
+      ],
+      "output": "dev/issue-6/regenerated/theater.png",
+      "runtime": "game/images/bg/bg theater.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-92f9d891-b26a-4891-82a0-3b2089d13921.png"
+    },
+    {
+      "id": "cabin_night",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. Interior main cabin of an old fishing trawler at night: cluttered wooden cabin with a cozy booth table, a doorway into a makeshift laboratory full of glowing jars, specimens and gadgets, a hanging oil lantern, nautical charts and maps pinned to the wall with red string, a worn orthopedic back pillow on the bench, portholes showing night harbour lights.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/cabin_night.png"
+      ],
+      "output": "dev/issue-6/regenerated/cabin_night.png",
+      "runtime": "game/images/bg/bg cabin night.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-78757191-7dbc-4234-8ddd-bddc6d7272b6.png"
+    },
+    {
+      "id": "storage",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. A small storage room inside an old fishing boat at night, cleared out: a canvas hammock strung between wooden rafters with warm blankets inside it, crates and fishing gear pushed to the sides, a round porthole showing moonlight on the harbor, a dim hanging lantern, peaceful and cozy.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/storage.png"
+      ],
+      "output": "dev/issue-6/regenerated/storage.png",
+      "runtime": "game/images/bg/bg storage.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-2c263758-c18a-47e0-bfbb-74a23e862157.png"
+    },
+    {
+      "id": "menu",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. The old blue-and-white fishing trawler 'Stan-O-War III' sailing across a vast dark ocean at sunset, dramatic orange, pink and violet sky with first stars, a distant iceberg, a tiny raft of garbage floating far off in the waves, mysterious and adventurous, composition leaves empty sky space on the left third for a title.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/menu.png"
+      ],
+      "output": "dev/issue-6/regenerated/menu.png",
+      "runtime": "game/images/bg/bg menu.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-e435a58c-cebc-4229-904c-3a0b54f181ec.png"
+    },
+    {
+      "id": "journal",
+      "prompt": "Background art for a visual novel in a simplified hand-painted 2D cartoon style: broad quiet shapes, very little surface detail, restrained saturation and a compressed value range. Background contrast and edge sharpness must remain lower than the foreground character sprites. Match the approved harbour reference: restrained watercolor and gouache washes, broad matte color planes, soft and lost edges, gentle atmospheric separation. No paper speckles or busy brush marks. no photorealism, microtexture, crisp distant linework, dramatic bloom or glittering reflections. Keep recognizable geography, camera angle, scene time and story-critical props, simplifying their internal detail. Leave calm unobstructed areas behind faces at the left and right character positions and room for the bottom dialogue box. Wide 16:9 composition, empty scene with NO people and NO characters; no captions, watermark or border. Only include lettering when explicitly required by the scene.  Image 1 is the approved STYLE reference only: match its sparse detail, matte softness and low visual contrast; do not import its harbour objects, daylight or color palette into unrelated scenes. Image 2 is the SCENE reference: preserve its composition, viewpoint, main objects, setting and story-critical props. Repaint and simplify those objects into broad shapes; do not merely blur the image. Keep the scene-specific time of day and lighting below. A flat-lay of an old leather-bound adventurer's journal opened to two blank, aged parchment pages with coffee stains, faint pencil sketches of sea creatures and cryptic symbols in the margins, a brass compass and a pencil on the dark wooden desk around it, viewed straight from above, pages fill most of the image. Keep the book pages blank and uncluttered; preserve the top-down view. No character-standing areas are necessary for this flat-lay.",
+      "references": [
+        "dev/issue-6/selected-style.png",
+        "dev/issue-6/original-backgrounds/journal.png"
+      ],
+      "output": "dev/issue-6/regenerated/journal.png",
+      "runtime": "game/images/bg/bg journal.jpg",
+      "status": "generated",
+      "generated_source": "/home/bestieboots/.codex/generated_images/01a1cc27-2612-73b1-a3cf-198608a64444/exec-c14f4ecd-ba4c-46be-81c2-5936a72a0a1a.png"
+    }
+  ],
+  "status": "All 19 approved-style backgrounds installed; existing sprites preserved."
+}
