@@ -81,7 +81,7 @@ To rebuild only backgrounds while preserving sprites and the other UI art:
 python3 dev/build_assets.py --backgrounds-only
 ```
 
-The current background briefs are derived from the dialogue and narration in `game/script.rpy`, with the sparse painted style expressed entirely in words. Generation uses **no image references**, including style samples. `dev/bg_prompts.py` stores the scene descriptions, source-line evidence and explicitly labeled production inferences. `dev/issue-6/fresh-text-only/prompts.json` records the exact prompts, empty image-input lists and runtime destinations. The original backgrounds and the superseded reference-based experiments remain in `dev/issue-6/` for comparison; they are not inputs to the fresh generation. Existing sprites are unchanged. The new backgrounds use the built-in image tool.
+The active backgrounds, dinner illustration, title screen and web loading image are restored to their versions from before the issue #6 regeneration work (`3c6d2f5`). `dev/bg_prompts.py` contains the original background briefs. The experiments and reviews in `dev/issue-6/` are historical and are not used by the game. Character sprites are unchanged.
 
 This reads source assets next to the script, not from `/tmp`. Regeneration of source images is separate and requires the local image service and its credentials; running the asset builder does not contact that service.
 

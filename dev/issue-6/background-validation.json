@@ -156,5 +156,6 @@
     ]
   },
   "preview": "dev/issue-6/selected-review.html",
-  "published": false
+  "published": false,
+  "status": "Historical regeneration record; superseded by restoring the original backgrounds from commit 3c6d2f5."
 }
